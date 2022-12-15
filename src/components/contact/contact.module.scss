@@ -1,0 +1,601 @@
+@use '../../scss/abstracts/variables' as *;
+
+.light {
+  .background {
+    background-color: hsl(44, 41%, 89%);
+  }
+
+  .contacts__form label {
+    background-color: #fff;
+  }
+  
+  .tittle {
+    color: $pink-light;
+  }
+
+  .subtitle {
+    color: $green-light;
+  }
+
+  .btn {
+    color: $old-color-primary;
+    border: 1px solid $old-color-primary;
+  }
+  
+  .btn:hover {
+    background: $white;
+    color: $old-bg;
+    border-color: transparent;
+  }
+  
+  .btn_primary {
+    background: $green-light;
+    color: $old-bg;
+  }
+  
+  .contacts__title {
+    color: $pink-light;
+  }
+  
+  .contacts__subtitle {
+    color: $green-light;
+  }
+
+  .contacts__text {
+    color: $green-light;
+    color: $teal-dark;
+  }
+
+  .h5 {
+    color: $old-color-light;
+  }
+  
+  .contact__option {
+    background: $pink-2;
+    color: $shadow-light;
+  }
+
+  .contact__a {
+    color: $pink-light;
+  }
+  
+  .contact__option:hover {
+    background: transparent;
+    border-color: $green-light;
+  }
+  
+  .gradientInputAnimation__input {
+    color: #fff;
+  }
+  
+  .gradientInputAnimation__sp {
+    color: $pink-light;
+  }
+  
+  .gradientInputAnimation__i {
+    background: #37291a;
+  }
+
+  .gradientInputAnimation__input:valid ~ span,
+  .gradientInputAnimation__input:focus ~ span {
+    color: $pink;
+  }
+}
+
+.dark {
+  .background {
+    background-color: hsl(270, 10%, 20%);
+  }
+
+  .contacts__form label {
+    background-color: #fff;
+  }
+  
+  .tittle {
+    color: $old-color-primary;
+  }
+
+  .subtitle {
+    color: $white;
+  }
+
+  .btn {
+    color: $old-color-primary;
+    border: 1px solid $old-color-primary;
+  }
+  
+  .btn:hover {
+    background: $white;
+    color: $old-bg;
+    border-color: transparent;
+  }
+  
+  .btn_primary {
+    background: $old-color-primary;
+    color: $old-bg;
+  }
+  
+  .contacts__title {
+    color: $white;
+  }
+  
+  .contacts__subtitle {
+    color: $old-color-primary;
+  }
+
+  .contacts__text {
+    color: $white;
+  }
+
+  .h5 {
+    color: $old-color-light;
+  }
+  
+  .contact__option {
+    background: $old-bg-variant;
+    color: $white;
+  }
+
+  .contact__a {
+    color: $old-color-primary;
+  }
+  
+  .contact__option:hover {
+    background: transparent;
+    border-color: $old-color-primary-vr;
+  }
+  
+  .gradientInputAnimation__input {
+    color: #fff;
+  }
+  
+  .gradientInputAnimation__sp {
+    color: #4bd5ff;
+  }
+  
+  .gradientInputAnimation__i {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  .gradientInputAnimation__input:valid ~ span,
+  .gradientInputAnimation__input:focus ~ span {
+    color: #2196f3;
+  }
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.tittle {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.contacts {
+  padding: 120px 0 90px 0;
+}
+
+
+.contact__option_TG {
+  color: #2196f3;
+}
+
+.contact__option_WhAp {
+  color: $green-light;
+}
+
+.contact__option_Em {
+  color: #9c27b0;
+}
+
+.contacts__wrapper {
+  padding: 0 35px 0 52px;
+  display: grid;
+  grid-template-columns: 400px 585px;
+  justify-content: space-between;
+}
+
+.contacts__photo {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+p {
+  margin: 0;
+}
+
+.contacts__photo img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 15px;
+}
+
+.contacts__title {
+  display: none;
+  position: relative;
+  padding: 1px 0 0 12px;
+  text-align: center;
+}
+
+
+.contacts__subtitle {
+  display: none;
+  position: relative;
+  padding: 1px 0 0 12px;
+  text-align: center;
+}
+
+.contacts__input {
+  position: relative;
+}
+
+.contacts__input input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 12px;
+}
+
+.contacts__link {
+  margin-right: 25px;
+}
+
+.contacts__link {
+  text-decoration: none;
+}
+
+.contacts__text {
+  margin-top: 20px;
+}
+
+.contacts__social {
+  display: none;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.contacts__link img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.contacts__form {
+  margin-top: 30px;
+  display: grid;
+  grid-template: 45px 190px 45px / repeat(2, 280px);
+  justify-content: space-between;
+  row-gap: 27px;
+}
+
+.contacts__form label {
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  height: 18px;
+  padding: 0 8px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+
+
+.contacts__textarea {
+  position: relative;
+  grid-column: 1 / 3;
+}
+
+.contacts__textarea textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.contacts__policy {
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__policy input {
+  margin-right: 10px;
+}
+
+.contacts__triggers {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 35px;
+}
+
+.contacts__btn {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media (max-width: 75em) {
+  .container {
+    max-width: 960px;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+    grid-template-columns: 400px 520px;
+  }
+
+  .contacts__form {
+    grid-template: 45px 190px 45px / repeat(2, 250px);
+  }
+}
+
+@media (max-width: 62em) {
+  .container {
+    max-width: 720px;
+  }
+
+  .title_fz36 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 26px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 300px 400px;
+  }
+
+  .contacts__form {
+    grid-template: 45px 190px 45px / repeat(2, 195px);
+  }
+
+  .contacts__btn {
+    padding: 8px 25px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    max-width: 540px;
+  }
+
+  .title_fz48 {
+    font-size: 28px;
+  }
+
+  .contacts {
+    padding-top: 40px;
+  }
+
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__form {
+    grid-template: 45px 190px 45px / repeat(2, 250px);
+  }
+
+  .contacts__photo {
+    display: none;
+  }
+
+  .contacts__social {
+    display: flex;
+  }
+
+  .tittle {
+    display: none;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .contacts__title {
+    display: block;
+  }
+
+  .contacts__subtitle {
+    display: block;
+  }
+}
+
+@media (max-width: 36em) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contacts {
+    padding: 120px 0 90px 0;
+  }
+
+  .title_fz48 {
+    font-size: 26px;
+  }
+
+  .title_fz36 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .contacts {
+    padding-bottom: 50px;
+  }
+
+  .contacts__form {
+    grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+  }
+
+  .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+  .contacts__btn {
+    order: 2;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .contacts__policy {
+    width: 180px;
+    margin: 0 auto;
+    line-height: 18px;
+  }
+}
+
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+
+.contact__option {
+  height: 33%;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: $transition;
+}
+
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  background: transparent;
+  resize: none;
+}
+
+
+.gradientInputAnimation {
+  position: relative;
+}
+
+.gradientInputAnimation__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  padding: 10px 0 5px;
+}
+
+
+
+.gradientInputAnimation__sp {
+  position: absolute;
+  text-transform: uppercase;
+  left: 0;
+  padding: 10px 0 5px;
+  pointer-events: none;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+
+.gradientInputAnimation__input:valid ~ span,
+.gradientInputAnimation__input:focus ~ span {
+  transform: translateY(-16px);
+  font-size: 0.65em;
+}
+
+
+
+.gradientInputAnimation__i {
+  font-size: 1.65em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+}
+
+.gradientInputAnimation i::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
+  animation: bank 2s linear infinite;
+  transition: $transition;
+}
+
+.gradientInputAnimation__input:valid ~ i::before,
+.gradientInputAnimation__input:focus ~ i::before {
+  left: 0;
+}
+
+@keyframes bank {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 250px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: $container-width-sm;
+  }
+}

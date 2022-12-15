@@ -1,0 +1,115 @@
+$old-color-primary: #4bd5ff;
+$old-color-primary-vr: #2c2c6c;;
+$transition: 0.5s;
+$old-color-light: rgba(255, 255, 255, 0.6);
+$old-bg-variant: #2c2c6c;
+$old-bg: #1f1f38;
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
+
+$pink-1: #f39ba091;
+$pink-2: #f39ba0c4;
+$pink-3: #f39ba0;
+$pink-4: #D08489;
+$pink-5: #B27175;
+$pink-6: #D08489;
+$pink-7: #f39ba0;
+$pink-8: #f39ba0c4;
+$pink-9: #f39b9f91;
+$pink-10: #f39ba063;
+$pink-hover: #f5a7a2;
+$space-s-l: calc(16rem + (20 * calc((100vh - 320 / 16 * 1rem) / 5000)));
+
+
+
+$bg-dark: #212121;
+$bg-alt-dark: #212121;
+$bg-second-dark: #212121;
+$btn-dark: #212121;
+$btn-alt-dark: #212121;
+$btn-hw-dark: #212121;
+$border-dark: #212121;
+$shadow-dark: #212121;
+$alt-shadow-dark: #212121;
+$mark-dark: #212121;
+$accent-dark: #212121;
+$text-dark: #212121;
+$blue-1: hsla(190, 100%, 26%, 0.541);
+
+
+
+$bg-light: hsl(44, 41%, 89%);
+$bg-alt-light: #ffdece;
+$bg-second-light: #fefcf9;
+$btn-light: #212121;
+$btn-alt-light: #212121;
+$btn-hw-light: #212121;
+$border-light: #212121;
+$shadow-light: #212121;
+$alt-shadow-light: #212121;
+$mark-light: #212121;
+$accent-light: #212121;
+$text-light: #212121;
+
+
+$red-dark: hsl(340, 85%, 38.3%);
+$red: hsl(340, 85%, 48.3%);
+$red-light: hsl(340, 85%, 58.3%);
+$orange-rgb: rgb(236, 109, 19);
+$orange-dark: hsl(25, 85%, 40%);
+$orange: hsl(25, 85%, 50%);
+$orange-light: hsl(25, 85%, 60%);
+$yellow-rgb: rgb(255, 157, 0);
+$yellow-dark-rgb: rgb(204, 126, 0);
+$yellow-light-rgb: rgb(255, 177, 51);
+$yellow-dark: hsl(37, 100%, 40%);
+$yellow: hsl(37, 100%, 50%);
+$yellow-light: hsl(37, 100%, 60%);
+$green-rgb: rgb(51, 138, 7);
+$green-dark: hsla(100, 90%, 23.5%);
+$green: hsla(100, 90%, 33.5%);
+$green-light: hsla(100, 90%, 43.5%);
+$teal-rgb: rgb(0, 184, 122);
+$teal-dark: hsl(160, 100%, 26%);
+$teal: hsl(160, 100%, 36%);
+$teal-light: hsl(160, 100%, 46%);
+$cyan-rgb: rgb(0, 255, 234);
+$cyan-dark: hsla(175, 100%, 40%);
+$cyan: hsla(175, 100%, 50%);
+$cyan-light: hsla(175, 100%, 60%);
+$blue-rgb: rgb(0, 153, 184);
+$blue-dark: hsl(190, 100%, 16%);
+$blue: hsl(190, 100%, 26%);
+$blue-light: hsl(190, 100%, 36%);
+$indigo-rgb: rgb(94, 51, 204);
+$indigo-dark: hsl(257, 60%, 40%);
+$indigo: hsl(257, 60%, 50%);
+$indigo-light: hsl(257, 60%, 60%);
+$purple-rgb: rgb(150, 82, 218);
+$purple-dark: hsl(270, 65%, 48.8%);
+$purple: hsl(270, 65%, 58.8%);
+$purple-light: hsl(270, 65%, 68.8%);
+$pink-rgb: rgb(223, 18, 120);
+$pink-dark: hsl(330, 85%, 37.2%);
+$pink: hsl(330, 85%, 47.2%);
+$pink-light: hsl(330, 85%, 57.2%);
+
+
+
+
+
+
+
+$background-primary: rgb(36, 36, 36);
+$background-secondary: rgb(27, 27, 27);
+$glare:#000;
+$shade:#000;
+$white: #fff;
+$text-normal:rgb(201, 201, 201);
+$text-normal-hover:rgb(255, 190, 0);
+$text-accent: rgb(254, 106, 38);
+$text-accent-hover: #5a92b2;
+$text-muted: #77cecf;
+$hover: rgb(98, 222, 172);
+$active: rgb(98, 183, 222);

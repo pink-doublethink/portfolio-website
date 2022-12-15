@@ -1,0 +1,151 @@
+@use '../../scss/abstracts/variables' as *;
+
+.light {
+  
+  .nav__themeTogle:before  {
+    background: $green-light;
+  }
+
+  .header__container  {
+    background-color: $pink-9;
+  }
+}
+
+.dark {
+  .nav__themeTogle:checked {
+    background: $shadow-light;
+  }
+  
+  .nav__themeTogle:before  {
+    background:$old-color-primary;
+  }
+
+  .header__container  {
+    background-color: $blue-1;
+  }
+}
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header {
+  // background: rgba(0, 0, 0, 0.3);
+  // position: relative;
+  // width: max-content;
+  // display: block;
+  // padding: 0.7rem 1.7rem;
+  // z-index: 2;
+  // position: fixed;
+  // left: 50%;
+  // transform: translate(-50%);
+  // bottom: 2rem;
+  // display: flex;
+  // gap: 0.8rem;
+  // border-radius: 3rem;
+  // backdrop-filter: blur(15px);
+  display: block;
+  top: 0;
+  z-index: 4;
+  position: fixed;
+  
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 90px;
+  -webkit-mask: linear-gradient(to top,#0000 20px,#000 0),
+  radial-gradient(20px at top,#000 97%,#0000) bottom / calc(1.9 * 16px) 20px;
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.header__item {
+  padding-top: 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.header__link {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: $old-color-light;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__link:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header__link.active {
+  background: $old-bg;
+  color: $white;
+}
+
+.nav__toobleBtn {
+  // transform: translate(50%,-50%);
+}
+
+.nav__toobleDicr {
+  display: none;
+}
+
+.nav__themeTogle {
+  padding-top: 20px;
+  position: relative;
+  width: 15px;
+  height: 5px;
+  -webkit-appearance: none;
+  background: transparent;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.nav__themeTogle:checked {
+  background: #03a9f4;
+}
+
+.nav__themeTogle:before  {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border-radius: 20px;
+  top: 13%;
+  left: 3%;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.nav__themeTogle:checked:before {
+  left: 20px;
+}

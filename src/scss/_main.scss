@@ -1,0 +1,316 @@
+@use './abstracts/variables' as *;
+
+@import './base/reset';
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section > h2 {
+  color: #4bd5ff;
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a {
+  color: #4bd5ff;
+  transition: $transition;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.header__icon:hover {
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  transition: $transition;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: $old-color-primary;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $old-color-primary;
+  transition: $transition;
+}
+
+.btn:hover {
+  background: $white;
+  color: $old-bg;
+  border-color: transparent;
+}
+
+.btn_primary {
+  background: $old-color-primary;
+  color: $old-bg;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ======================= Media Queries ======================= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width:$container-width-md;
+  }
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width:$container-width-sm;
+  }
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+.light {
+  background-color: hsl(44, 41%, 89%);
+
+  
+
+  .background_primary {
+    color: #876;
+  }
+
+  .background_primary_alt {
+    color: $pink;
+  }
+
+  .background_secondary {
+    color: #212121;
+  }
+
+  .btn {
+    color: #212121;
+  }
+
+  .btn:hover {
+    color: #212121;
+  }
+
+  .btn_border {
+    color: #212121;
+  }
+
+  .h1 {
+    color: #212121;
+  }
+
+  .h2 {
+    color: #212121;
+  }
+
+  .h3 {
+    color: #212121;
+  }
+
+  .text_accent {
+    color: #212121;
+  }
+
+  .text__accent:hover {
+    color: #212121;
+  }
+
+  .text_normal {
+    color: #212121;
+  }
+
+  .text__normal:hover {
+    color: #212121;
+  }
+
+  .text-muted {
+    color: #212121;
+  }
+
+  .mark {
+    color: #212121;
+  }
+
+  .aqua {
+    color: #30daff;
+  }
+
+  .purple {
+    color: #b073ff;
+  }
+
+  .text {
+    color: $glare;
+  }
+
+  .background {
+    background-color: $text-normal;
+  }
+
+  .flexs {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .scroll__h5 {
+    color: #b073ff;
+  }
+}
+
+
+
+
+.dark {
+  background-color: hsl(270, 10%, 20%);
+
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .scroll__h5 {
+    color: #b073ff;
+    font-size: 5em;
+  }
+
+  .background_primary {
+    color: #212121;
+  }
+
+  .background_primary_alt {
+    color: $indigo;
+  }
+
+  .background_secondary {
+    color: #212121;
+  }
+
+  .btn {
+    color: #212121;
+  }
+
+  .btn:hover {
+    color: #212121;
+  }
+
+  .btn_border {
+    color: #212121;
+  }
+
+  .h1 {
+    color: #212121;
+  }
+
+  .h2 {
+    color: #212121;
+  }
+
+  .h3 {
+    color: #212121;
+  }
+
+  .text_accent {
+    color: #212121;
+  }
+
+  .text__accent:hover {
+    color: #212121;
+  }
+
+  .text_normal {
+    color: #212121;
+  }
+
+  .text__normal:hover {
+    color: #212121;
+  }
+
+  .text-muted {
+    color: #212121;
+  }
+
+  .mark {
+    color: #212121;
+  }
+
+  .aqua {
+    color: #30daff;
+  }
+
+  .purple {
+    color: #b073ff;
+  }
+
+
+  .text {
+    color: $text-normal;
+  }
+
+  .background {
+    background-color: $glare;
+  }
+
+  .flex {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.flex {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

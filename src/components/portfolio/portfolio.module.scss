@@ -1,0 +1,147 @@
+@use '../../scss/abstracts/variables' as *;
+
+.light {
+  .background {
+    background-color: hsl(44, 41%, 89%);
+  }
+
+  .title {
+    color: $pink-light;
+  }
+
+  .subtitle {
+    color: $green-light;
+  }
+
+  .btn {
+    color: $pink-light;
+    border: 1px solid $pink-light;
+  }
+  
+  .btn:hover {
+    background: $white;
+    color: $old-bg;
+    border-color: transparent;
+  }
+  
+  .btn_primary {
+    background: $green-light;
+    color: $old-bg;
+  }
+
+  .portfolio__item {
+    background: $pink-2;
+    border: 1px solid transparent;
+  }
+  
+  .portfolio__item:hover {
+    border-color: $green-light;
+    background: transparent;
+  }
+}
+
+.dark {
+  .background {
+    background-color: hsl(270, 10%, 20%);
+  }
+
+  .title {
+    color: $old-color-primary;
+  }
+
+  .subtitle {
+    color: $white;
+  }
+
+  .btn {
+    color: $old-color-primary;
+    border: 1px solid $old-color-primary;
+  }
+  
+  .btn:hover {
+    background: $white;
+    color: $old-bg;
+    border-color: transparent;
+  }
+  
+  .btn_primary {
+    background: $old-color-primary;
+    color: $old-bg;
+  }
+
+  .portfolio__item {
+    background: $old-bg-variant;
+    border: 1px solid transparent;
+  }
+  
+  .portfolio__item:hover {
+    border-color: $old-color-primary-vr;
+    background: transparent;
+  }
+}
+
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: $transition;
+}
+
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  grid-auto-columns: 1fr;
+}
+
+
+
+.portfolio__item {
+  padding: 1.3rem;
+  border-radius: 2rem;
+  transition: $transition;
+}
+
+
+.portfolio__item_image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio__item h3 {
+  margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item_cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
