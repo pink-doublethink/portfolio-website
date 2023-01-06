@@ -24,21 +24,6 @@ const Header = () => {
           <div className={styles.header__link}>Home</div>
           <div className={styles.header__link}> | </div>
           <div className={styles.header__link}>Blog</div>
-        {/* <a name="menu" href="#home" className={styles.header__link}>
-            <AiOutlineHome />
-          </a>
-          <a name="menu"  className={styles.header__link}>
-            <AiOutlineUser />
-          </a>
-          <a name="menu" href="#experience" className={styles.header__link}>
-            <BiBook />
-          </a>
-          <a name="menu" href="#services" className={styles.header__link}>
-            <RiServiceLine />
-          </a>
-          <a name="menu" href="#contact" className={styles.header__link}>
-            <BiMessageSquareDetail />
-          </a> */}
         </div>
         <div className={styles.header__item}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>
