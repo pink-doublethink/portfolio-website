@@ -1,7 +1,7 @@
 @use '../../scss/abstracts/variables' as *;
 
 .light {
-  .background {
+  .hero {
     background-color: hsl(44, 41%, 89%);
   }
 
@@ -17,7 +17,7 @@
     color: hsl(270, 10%, 20%);
   }
 
-  .header__subtitle {
+  .hero__subtitle {
     color: hsl(270, 10%, 20%);
   }
 
@@ -37,7 +37,7 @@
     color: $old-bg;
   }
 
-  .header__socials::after {
+  .hero__socials::after {
     background: $pink-light;
   }
 
@@ -47,7 +47,7 @@
 }
 
 .dark {
-  .background {
+  .hero {
     background-color: hsl(270, 10%, 20%);
   }
 
@@ -63,7 +63,7 @@
     color: $white;
   }
 
-  .header__subtitle {
+  .hero__subtitle {
     color: $white;
   }
 
@@ -83,7 +83,7 @@
     color: $old-bg;
   }
 
-  .header__socials::after {
+  .hero__socials::after {
     background: $old-color-primary;
   }
 
@@ -92,7 +92,7 @@
   }
 }
 
-.header__subtitle {
+.hero__subtitle {
   margin-top: 30px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -127,7 +127,7 @@ header {
   overflow: hidden;
 }
 
-.haeder__container {
+.hero__container {
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -141,7 +141,7 @@ header {
   justify-content: center;
 }
 
-.header__socials {
+.hero__socials {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -152,7 +152,7 @@ header {
 }
 
 
-.header__socials::after {
+.hero__socials::after {
   content: "";
   width: 1px;
   height: 2rem;
@@ -179,7 +179,7 @@ header {
   align-content: center;
 }
 
-.header__icon {
+.hero__icon {
   max-width: 20px;
   max-height: 20px;
 }
@@ -198,7 +198,7 @@ header {
   header {
     height: 98vh;
   }
-  .header__socials,
+  .hero__socials,
   .scroll__down {
     display: none;
   }

@@ -6,7 +6,6 @@ import TG from "../../assets/telegram.svg";
 import VK from "../../assets/vk.svg";
 import WTA from "../../assets/whatsap.svg";
 import { MdOutlineEmail } from "react-icons/md";
-// import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsTelegram } from "react-icons/bs"; 
 

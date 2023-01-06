@@ -13,26 +13,26 @@
     color: $green-light;
   }
 
-  .services {
+  .exp {
     background: $pink-9;
     border: 1px solid $old-color-primary; 
   }
   
-  .services:hover {
+  .exp:hover {
     background: transparent;
     border-radius: $green-light;
   }
   
-  .services__head {
+  .exp__head {
     background: $pink-2;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
   }
   
-  .services__head h3 {
+  .exp__head h3 {
     color: $old-bg;
   }
   
-  .services__list_icon {
+  .exp__list_icon {
     color: $white;
   }
 }
@@ -50,27 +50,27 @@
     color: $white;
   }
 
-  .services {
+  .exp {
     background: $old-bg-variant;
     border: 1px solid $old-color-primary;
   }
   
-  .services:hover {
+  .exp:hover {
     background: transparent;
     border-radius: $old-color-primary-vr;
   }
   
-  .services__head {
+  .exp__head {
     background: $old-color-primary;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
   }
   
   
-  .services__head h3 {
+  .exp__head h3 {
     color: $old-bg;
   }
   
-  .services__list_icon {
+  .exp__list_icon {
     color: $old-color-primary;
   }
 }
@@ -86,13 +86,13 @@
   text-align: center;
 }
 
-.services__container {
+.exp__container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: .75rem;
 }
 
-.services__articles {
+.exp__articles {
   grid-column: 3 / 10;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -100,56 +100,56 @@
 }
 
 
-.services {
+.exp {
   border-radius: 0 0 2rem 2rem;
   height: fit-content;
   transition: $transition;
 }
 
-.services:hover {
+.exp:hover {
   cursor: default;
 }
 
-.services__head {
+.exp__head {
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
 }
 
-.services__head h3 {
+.exp__head h3 {
   font-size: 1rem;
   text-align: center;
 }
 
-.services__list {
+.exp__list {
   padding: 2rem;
 }
 
-.services__list li {
+.exp__list li {
   display: flex;
   gap: 1rem;
   margin-bottom: 0.8rem;
 }
 
-.services__list_icon {
+.exp__list_icon {
   margin-top: 2px;
 }
 
-.services__list p {
+.exp__list p {
   font-size: 0.9rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .services__container {
+  .exp__container {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-  .services {
+  .exp {
     height: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .services__container {
+  .exp__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }

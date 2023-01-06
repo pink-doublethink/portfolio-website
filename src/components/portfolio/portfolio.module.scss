@@ -1,7 +1,7 @@
 @use '../../scss/abstracts/variables' as *;
 
 .light {
-  .background {
+  .portfolio {
     background-color: hsl(44, 41%, 89%);
   }
 
@@ -41,7 +41,7 @@
 }
 
 .dark {
-  .background {
+  .portfolio {
     background-color: hsl(270, 10%, 20%);
   }
 
