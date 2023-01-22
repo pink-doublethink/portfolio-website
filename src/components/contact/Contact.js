@@ -1,5 +1,6 @@
 import styles from "./contact.module.scss";
 import { useContext, useRef } from "react";
+import { Link } from 'react-router-dom';
 import { ThemeContext } from "../../helpers/ThemeContext";
 import emailjs from "emailjs-com";
 import TG from "../../assets/telegram.svg";
@@ -154,7 +155,7 @@ const Contact = () => {
                     <input required type="checkbox" />
                     <span>
                       Я согласен(а) с{" "}
-                      <a href="http://#">политикой конфиденциальности</a>
+                      <Link to="/privacy">политикой конфиденциальности</Link>
                     </span>
                   </div>
                 </div>
@@ -167,4 +168,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact
