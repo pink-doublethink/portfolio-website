@@ -1,5 +1,6 @@
 import styles from "./header.module.scss";
 import { useContext } from "react";
+import { Link } from 'react-router-dom';
 import { ThemeContext } from "../../helpers/ThemeContext";
 // import { AiOutlineHome } from "react-icons/ai";
 // import { AiOutlineUser } from "react-icons/ai";
@@ -21,9 +22,9 @@ const Header = () => {
         <div></div>
         <div></div>
         <div className={styles.header__items}>
-          <div className={styles.header__link}>Home</div>
+          <button className={styles.header__link}><Link to="/">Home</Link></button>
           <div className={styles.header__link}> | </div>
-          <div className={styles.header__link}>Blog</div>
+          <button className={styles.header__link}><Link to="/blog">Blog</Link></button>
         </div>
         <div className={styles.header__item}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>
@@ -34,3 +35,4 @@ const Header = () => {
 };
 
 export default Header;
+

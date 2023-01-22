@@ -1,0 +1,73 @@
+@use '../../scss/abstracts/variables' as *;
+
+.light {
+  main {
+    background-color: hsl(44, 41%, 89%);
+  }
+
+    .policy {
+      background-color: hsl(44, 41%, 89%);
+      color: hsl(270, 10%, 20%);
+    }
+  
+    }
+  
+  .dark {
+    main {
+      background-color: hsl(270, 10%, 20%);
+    }
+  
+    .policy {
+      background-color: hsl(270, 10%, 20%);
+      color: $white;
+    }
+
+}
+
+.policy { 
+  margin: 0 4%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.policy__container {
+    position: relative;
+    margin: 0 auto;
+    text-align: start;
+    height: 100%;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.policy__title {
+  margin-top: 5.5em;
+  text-align: center;
+  font-size: clamp(2em, 3vh, 3em);
+}
+
+.policy__end {
+  margin-bottom: 5.5em;
+}
+
+.policy__paragraph {
+  margin-top: 3em;
+}
+
+.policy__subtitle {
+  margin-top: 1.5em;
+}
+
+.policy__subparagraph {
+  margin-top: 1.5em;
+}
+
+.policy__nestedList {
+  margin-top: 1.5em;
+}
+
+.policy__clause {
+  margin-top: 1.5em;
+}
