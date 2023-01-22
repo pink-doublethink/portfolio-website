@@ -80,6 +80,14 @@
   .gradientInputAnimation__input:focus ~ span {
     color: $pink;
   }
+
+  .contacts__policyText {
+    color: $pink-light;
+  }
+
+  .contacts__policy {
+    color: $accent-light;
+  }
 }
 
 .dark {
@@ -160,6 +168,14 @@
   .gradientInputAnimation__input:valid ~ span,
   .gradientInputAnimation__input:focus ~ span {
     color: #2196f3;
+  }
+
+  .contacts__policy {
+    color: $white;
+  }
+
+  .contacts__policyText {
+    color: $old-color-primary;
   }
 }
 
@@ -311,14 +327,19 @@ p {
 }
 
 .contacts__policy {
-  font-size: 12px;
-  line-height: 14px;
+height: 51px;
+width: 220px;
+  margin: 0 auto;
+  line-height: 18px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
 .contacts__policy input {
-  margin-right: 10px;
+  margin-right: 29px;
+  height: 33px;
+  width: 33px;
 }
 
 .contacts__triggers {

@@ -13,6 +13,10 @@
     color: $green-light;
   }
 
+  .portfolio__title {
+    color: $accent-light;
+  }
+
   .btn {
     color: $pink-light;
     border: 1px solid $pink-light;
@@ -53,6 +57,10 @@
     color: $white;
   }
 
+  .portfolio__title {
+    color: $white;
+  }
+
   .btn {
     color: $old-color-primary;
     border: 1px solid $old-color-primary;
@@ -80,6 +88,10 @@
   }
 }
 
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
 
 .subtitle {
   font-size: 1.3rem;
@@ -137,11 +149,19 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
   }
+
+  .container {
+    width:$container-width-md;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .container {
+    width:$container-width-sm;
   }
 }

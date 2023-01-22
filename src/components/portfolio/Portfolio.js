@@ -8,42 +8,42 @@ const data = [
   {
     id: 1,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Real Estate Website",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 2,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Tabletop forum",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 3,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Empatphy Mesum",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 4,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Pulsometr Landing Page",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 5,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Olga Rozanova Website",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 6,
     image: IMG2,
-    title: "This is a portofolio item title",
+    title: "Country Info",
     github: "http://#",
     demo: "http://#"
   }
@@ -63,7 +63,7 @@ const Portfolio = () => {
                 <div className={styles.portfolio__item_image}>
                   <img src={image} alt={title} />
                 </div>
-                <h3>{title}</h3>
+                <h3 className={styles.portfolio__title}>{title}</h3>
                 <div className={styles.portfolio__item_cta}>
                   <a href={github} className={styles.btn} tarhet="_blank">
                     Github

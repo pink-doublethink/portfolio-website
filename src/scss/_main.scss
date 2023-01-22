@@ -70,6 +70,8 @@ a:hover {
   background: $white;
   color: $old-bg;
   border-color: transparent;
+  // transition: box-shadow 0.3s ease 0s;
+  // box-shadow: rgb(50 50 50) 0px 0px 2rem -1rem;
 }
 
 .btn_primary {
@@ -84,6 +86,8 @@ img {
 }
 
 /* ======================= Media Queries ======================= */
+
+
 
 @media screen and (max-width: 1024px) {
   .container {

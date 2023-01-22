@@ -9,6 +9,15 @@
   .header__container  {
     background-color: $pink-9;
   }
+
+  .header__link {
+    color: $accent-light;
+  }
+
+  .header__link.active {
+    background: $old-bg;
+    color: $white;
+  }
 }
 
 .dark {
@@ -22,6 +31,15 @@
 
   .header__container  {
     background-color: $blue-1;
+  }
+
+  .header__link {
+    color: $old-color-light;
+  }
+
+  .header__link.active {
+    background: $old-bg;
+    color: $white;
   }
 }
 
@@ -43,7 +61,6 @@
   top: 0;
   z-index: 4;
   position: fixed;
-  
   width: 100%;
 }
 
@@ -72,12 +89,11 @@
   position: relative;
 }
 
-.header__link {
+.header__links {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: $old-color-light;
   font-size: 1.1rem;
   display: flex;
   justify-content: center;
@@ -88,10 +104,7 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.header__link.active {
-  background: $old-bg;
-  color: $white;
-}
+
 
 .nav__toobleDicr {
   display: none;
