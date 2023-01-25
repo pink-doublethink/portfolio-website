@@ -19,13 +19,13 @@
 
   .btn {
     color: $old-color-primary;
-    border: 1px solid $old-color-primary;
+    border: 1px solid $green-light;
   }
   
   .btn:hover {
-    background: $white;
-    color: $old-bg;
-    border-color: transparent;
+    background: $teal-light;
+    color: #37291a;
+    border: 1px solid $green-light;
   }
   
   .btn_primary {
@@ -43,7 +43,7 @@
 
   .contacts__text {
     color: $green-light;
-    color: $teal-dark;
+    color: #37291a;;
   }
 
   .h5 {
@@ -56,7 +56,7 @@
   }
 
   .contact__a {
-    color: $pink-light;
+    color: $teal-dark;
   }
   
   .contact__option:hover {
@@ -107,10 +107,7 @@
     color: $white;
   }
 
-  .btn {
-    color: $old-color-primary;
-    border: 1px solid $old-color-primary;
-  }
+  
   
   .btn:hover {
     background: $white;

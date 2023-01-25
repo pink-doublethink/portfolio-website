@@ -3,63 +3,71 @@
 .light {
     .footer {
         background: $green-light;
+
+        &__initials {
+            color: $old-bg;
+        }
     }
 }
 
 .dark { 
     .footer {
         background: $old-color-primary;
+
+        &__initials {
+            color: $old-bg;
+        }
     }
 }
 
 .footer {
     height: 100px;
     width: 100%;
-}
 
-.footer__contanier {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-}
+    &__contanier {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
 
-.footer__logo {
-    height: 90px;
-    width: 250px;
-    display: flex;
-    align-content: center;
-}
+    &__logo {
+        height: 90px;
+        width: 250px;
+        display: flex;
+        align-content: center;
+    }
 
-.footer__initials {
-    font-weight: 700;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-}
+    &__initials {
+        font-weight: 700;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+    }
 
-.footer__social {
-    height: 90px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-}
+    &__social {
+        height: 90px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+    }
 
-.footer__ul {
-    display: flex;
-    gap: 20px;
-}
+    &__ul {
+        display: flex;
+        gap: 20px;
+    }
 
-.footer__li {
-    height: 35px;
-    width: 35px;
-}
+    &__li {
+        height: 35px;
+        width: 35px;
+    }
 
-.footer__a {
-    cursor: pointer;
-}
+    &__a {
+        cursor: pointer;
+    }
 
-.footer__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }

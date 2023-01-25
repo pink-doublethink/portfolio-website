@@ -1,5 +1,34 @@
 @use '../../scss/abstracts/variables' as *;
 
+.subtitle {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: $transition;
+}
+
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+
 .light {
   .hero {
     background-color: hsl(44, 41%, 89%);
@@ -22,14 +51,14 @@
   }
 
   .btn {
-    color: $pink-light;
-    border: 1px solid $pink-light;
+    color: $old-bg;
+    border: 1px solid $green-light;
   }
   
   .btn:hover {
-    background: $white;
+    background: $teal-light;
     color: $old-bg;
-    border-color: transparent;
+    border: 1px solid $green-light;
   }
   
   .btn_primary {
@@ -92,70 +121,41 @@
   }
 }
 
-.hero__subtitle {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-}
+.hero {
+  &__subtitle {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
 
-.subtitle {
-  margin-top: 17px;
-  font-weight: 500;
-  font-size: 1.5rem;
-  text-align: center;
-}
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+  }
 
-.title {
-  font-size: 2.4rem;
-  text-align: center;
-  margin-top: 17px;
-}
+  &__socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    left: 10%;
+    bottom: 12%;
 
-.btn {
-  width: max-content;
-  display: inline-block;
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: $transition;
-}
+    &::after {
+      content: "";
+      width: 1px;
+      height: 2rem;
+    }
+  }
 
-header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
-}
-
-.hero__container {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  height: 100%;
-}
-
-.cta {
-  margin-top: 2.5rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-}
-
-.hero__socials {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.8rem;
-  left: 10%;
-  bottom: 12%;
-}
-
-
-.hero__socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
+  &__icon {
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
 
 .me {
@@ -168,20 +168,15 @@ header {
   margin: 3rem auto 0 auto;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-}
 
-.me__image {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 95%;
-  height: 95%;
-  align-content: center;
-}
-
-.hero__icon {
-  max-width: 20px;
-  max-height: 20px;
+  &__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 95%;
+    align-content: center;
+  }
 }
 
 .scroll__down {
@@ -193,6 +188,12 @@ header {
   font-size: 1.3rem;
 }
 
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1024px) {
   header {

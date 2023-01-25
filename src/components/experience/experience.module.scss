@@ -1,5 +1,16 @@
 @use '../../scss/abstracts/variables' as *;
 
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
 .light {
   .background {
     background-color: hsl(44, 41%, 89%);
@@ -16,24 +27,28 @@
   .exp {
     background: $pink-9;
     border: 1px solid $old-color-primary; 
-  }
-  
-  .exp:hover {
-    background: transparent;
-    border-radius: $green-light;
-  }
-  
-  .exp__head {
-    background: $pink-2;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-  }
-  
-  .exp__head h3 {
-    color: $old-bg;
-  }
-  
-  .exp__list_icon {
-    color: $white;
+
+    &:hover {
+      background: transparent;
+      border-radius: $green-light;
+    }
+
+    &__head {
+      background: $pink-2;
+      box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+
+      h3 {
+        color: $old-bg;
+      }
+    }
+
+    &__list_icon {
+      color: $teal-dark;
+    }
+
+    &__list p {
+      color: $old-bg;
+    }
   }
 }
 
@@ -53,98 +68,94 @@
   .exp {
     background: $old-bg-variant;
     border: 1px solid $old-color-primary;
-  }
-  
-  .exp:hover {
-    background: transparent;
-    border-radius: $old-color-primary-vr;
-  }
-  
-  .exp__head {
-    background: $old-color-primary;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  .exp__head h3 {
-    color: $old-bg;
-  }
-  
-  .exp__list_icon {
-    color: $old-color-primary;
+
+    &:hover {
+      background: transparent;
+      border-radius: $old-color-primary-vr;
+    }
+
+    &__head {
+      background: $old-color-primary;
+      box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    
+      h3 {
+        color: $old-bg;
+      }
+    }
+
+    &__list_icon {
+      color: $old-color-primary;
+    }
+
+    &__list p {
+      color: $white;
+    }
   }
 }
 
 
-.subtitle {
-  font-size: 1.3rem;
-  text-align: center;
-}
 
-.title {
-  font-size: 2.4rem;
-  text-align: center;
-}
-
-.exp__container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: .75rem;
-}
-
-.exp__articles {
-  grid-column: 3 / 10;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
 
 
 .exp {
   border-radius: 0 0 2rem 2rem;
   height: fit-content;
   transition: $transition;
-}
 
-.exp:hover {
-  cursor: default;
-}
+  &:hover {
+    cursor: default;
+  }
 
-.exp__head {
-  padding: 2rem;
-  border-radius: 0 0 2rem 2rem;
-}
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .75rem;
+  }
 
-.exp__head h3 {
-  font-size: 1rem;
-  text-align: center;
-}
+  &__head {
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
 
-.exp__list {
-  padding: 2rem;
-}
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
 
-.exp__list li {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0.8rem;
-}
+  &__articles {
+    grid-column: 3 / 10;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 
-.exp__list_icon {
-  margin-top: 2px;
-}
+  &__list {
+    padding: 2rem; 
 
-.exp__list p {
-  font-size: 0.9rem;
+    li {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__list_icon {
+    margin-top: 2px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .exp__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
   .exp {
     height: auto;
+
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
   }
 }
 
