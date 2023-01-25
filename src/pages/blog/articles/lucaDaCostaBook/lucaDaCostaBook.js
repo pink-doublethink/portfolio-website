@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../../helpers/ThemeContext";
 import styles from "./lucaDaCostaBook.module.scss";
 
-function LucaDaCostaBook() {
+const LucaDaCostaBook = () => {
     const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>

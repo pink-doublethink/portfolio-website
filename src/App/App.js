@@ -2,12 +2,9 @@ import "../scss/_main.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../helpers/ThemeContext";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Home from "../pages/Home";
-import  Privacy from "../pages/Privacy";
-import Blog from "../pages/blog/Blog";
 import Header from "../components/header/Header";
-import BecameFrontDev from "../pages/blog/articles/howIBecameFrontedDev/becameFrontDev";
-import LucaDaCostaBook from "../pages/blog/articles/lucaDaCostaBook/lucaDaCostaBook";
+import {Home, Privacy, Page404, Blog, BecameFrontDev, LucaDaCostaBook} from "../pages";
+
 
 
 const App = () => {
@@ -32,6 +29,9 @@ const App = () => {
                     </Route>
                     <Route exact path="/blog/becameFrontDev">
                         <BecameFrontDev />
+                    </Route>
+                    <Route path="*">
+                        <Page404 />
                     </Route>
                 </Switch>
             </main>
