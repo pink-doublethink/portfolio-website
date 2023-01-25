@@ -1,5 +1,25 @@
 @use '../../scss/abstracts/variables' as *;
 
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  padding-bottom: 3%;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: $transition;
+}
+
 .light {
   .background {
     background-color: hsl(44, 41%, 89%);
@@ -76,25 +96,6 @@
   }
 }
 
-
-.subtitle {
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-.title {
-  font-size: 2.4rem;
-  padding-bottom: 3%;
-}
-
-.btn {
-  width: max-content;
-  display: inline-block;
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: $transition;
-}
 
 .about {
   margin-top: 35vh;
@@ -240,10 +241,3 @@
     margin: 0;
   }
 }
-
-@media(max-width: 100px) {
-  .about {
-    margin: 0;
-  }
-}
-

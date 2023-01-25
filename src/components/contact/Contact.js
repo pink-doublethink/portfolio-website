@@ -155,7 +155,7 @@ const Contact = () => {
                     <input required type="checkbox" />
                     <span>
                       Я согласен(а) с{" "}
-                      <Link to="/privacy">политикой конфиденциальности</Link>
+                      <Link to="/privacy"><span className={styles.contacts__policyText}>политикой конфиденциальности</span></Link>
                     </span>
                   </div>
                 </div>
