@@ -2,6 +2,47 @@
 
 @import './base/reset';
 
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Roboto Flex';
+    src: url('../assets/fonts/variable/RobotoFlex.ttf') format('ttf supports variations'),
+        url('../assets/fonts/variable/RobotoFlex.ttf') format('ttf-variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+
+  body {
+    font-family: 'Roboto Flex';
+    font-weight: 980;
+    font-stretch: 35%;
+  }
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/static/Roboto-Bold.woff2') format('woff2'),
+      url('../assets/fonts/static/Roboto-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/static/Roboto-Regular.woff2') format('woff2'),
+      url('../assets/fonts/static/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+
 .container {
   width: 75%;
   margin: 0 auto;

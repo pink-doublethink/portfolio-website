@@ -20,6 +20,7 @@
 .dark {
   main {
     background-color: hsl(270, 10%, 20%);
+    
   }
   
   .policy {
@@ -45,6 +46,7 @@
     margin-top: 5.5em;
     text-align: center;
     font-size: clamp(2em, 3vh, 3em);
+    font-weight: 230;
   }
 
   &__end {

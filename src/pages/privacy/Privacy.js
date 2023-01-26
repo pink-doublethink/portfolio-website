@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../helpers/ThemeContext";
-import styles from "./policy.module.scss";
+import styles from "./privacy.module.scss";
 
-const Policy = () =>  {
+const Privacy = () =>  {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -370,5 +370,5 @@ const Policy = () =>  {
   )
 }
 
-export default Policy
+export default Privacy
 

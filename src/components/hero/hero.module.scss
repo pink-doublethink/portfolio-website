@@ -1,5 +1,19 @@
 @use '../../scss/abstracts/variables' as *;
 
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Roboto Flex';
+    src: url('../../assets/fonts/variable/RobotoFlex.ttf') format('ttf');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+
+  .title  {
+    font-family: 'Roboto Flex';
+    font-variation-settings: 'wght' 880, 'slnt' -9;
+  }
+}
+
 .subtitle {
   margin-top: 17px;
   font-weight: 500;
@@ -123,7 +137,7 @@ header {
 
 .hero {
   &__subtitle {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -164,7 +178,7 @@ header {
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
-  bottom:8%;
+  bottom:7%;
   margin: 3rem auto 0 auto;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
