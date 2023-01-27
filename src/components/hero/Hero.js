@@ -29,14 +29,14 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles.hero__socials}>
-            <a href="http://vk.com" target="_blank" rel="noreferrer">
+            <a href="https://t.me/pink_doublethink" target="_blank" rel="noreferrer">
+              <BsTelegram className={styles.hero__icon} />
+            </a>
+            <a href="https://vk.com/dark_maestro" target="_blank" rel="noreferrer">
               <img src={VK} alt="ВКонтакте" className={styles.hero__icon} />
             </a>
             <a href="http://vk.com" target="_blank" rel="noreferrer">
               <img src={WTA} alt="ВКонтакте" className={styles.hero__icon} />
-            </a>
-            <a href="http://vk.com" target="_blank" rel="noreferrer">
-              <BsTelegram className={styles.hero__icon} />
             </a>
           </div>
           <div className={styles.me}>
