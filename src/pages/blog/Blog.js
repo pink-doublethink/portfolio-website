@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../helpers/ThemeContext";
+import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
 import styles from "./blog.module.scss";
 import M from "../../assets/portfolio2.jpg"
@@ -10,6 +11,13 @@ const Blog = () => {
 
   return (
     <div className={styles[theme]}>
+        <Helmet>
+            <title>Блог о разработке</title>
+            <meta
+            name="description"
+            content="Фронтенд разработчик с опытом работы на React/Next.js/TypeScript. Работая над проектами я заинтересован создавать Продукты, расширяющие возможности людей."
+            />
+      </Helmet>
       <div className={styles.blog}>
         <div className={styles.blog__container}>
             <article className={styles.article}>
@@ -45,9 +53,9 @@ const Blog = () => {
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/blog/lucaDaCostaBook">
-                                <h2 className={styles.article__title}>Маркус против Титании</h2>
+                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
                             </Link>
-                            <p className={styles.article__text}>Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. </p>
+                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
                         </div>
                         <div className={styles.article__date}>
                             <div className={styles.article__publish}>24.01.2023</div>

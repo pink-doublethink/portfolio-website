@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../../helpers/ThemeContext";
+import {Helmet} from "react-helmet";
 import styles from "./becameFrontDev.module.scss";
 
 const BecameFrontDev = () => {
     const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>
+      <Helmet>
+        <title>Как я стал фронтенд разработчиком</title>
+      </Helmet>
       <div className={styles.article}>
       <div className={styles.article__container}>
               <h1 className={styles.article__title}> О партии</h1>

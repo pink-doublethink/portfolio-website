@@ -1,0 +1,46 @@
+@use '../../scss/abstracts/variables' as *;
+
+.light {
+    .ErrPage {
+        background-color: hsl(44, 41%, 89%);
+        color: hsl(270, 10%, 20%);
+    }
+    
+}
+  
+.dark {
+    .ErrPage {
+      background-color: hsl(270, 10%, 20%);
+      color: $white;
+    }
+}
+
+.ErrPage {
+    margin: 0 4%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__box {
+        width: clamp(200px, 50%, 800px);
+        height: clamp(200px, 42%, 900px);;
+    }
+
+    &__title {
+        font-size: clamp(18px, 5vw, 50px);
+        margin: min(6vh, 2.45rem) 0 1.1rem;
+    }
+
+    &__text {
+        font-size: clamp(16px, 4vw, 28px);
+        margin: min(6vh, 2.45rem) 0 1.1rem;
+    }
+
+    &__backLink {
+        font-size: clamp(18px, 4vw, 28px);
+        margin: min(6vh, 2.45rem) 0 1.1rem;
+    }
+}

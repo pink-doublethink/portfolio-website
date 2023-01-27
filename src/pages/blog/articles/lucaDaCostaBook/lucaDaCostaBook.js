@@ -1,14 +1,18 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../../helpers/ThemeContext";
+import {Helmet} from "react-helmet";
 import styles from "./lucaDaCostaBook.module.scss";
 
 const LucaDaCostaBook = () => {
     const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>
+        <Helmet>
+            <title>Рецензия на книгу "Тестируем JavaScript"</title>
+        </Helmet>
       <div className={styles.article}>
           <div className={styles.article__container}>
-              <h1 className={styles.article__title}> О партии</h1>
+              <h1 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h1>
               <div className={styles.article__box}>
                   <h3 className={styles.article__subtitle}>О партии</h3>
                   <p className={styles.article__paragraph}>Первый ход протекал достаточно плавно. Банды потихоньку сближались. Я использовал **Herd 'Em** 4 раза(по два раза от Пенелопы и Хога) на разных свиней, чтобы те шли вперед. Дима тоже не спешил активировать свои ключивые модели начав ходы с Легии, раздачи апгрейдов с эмиссара, минорных муво Джека и Монтрессора</p>

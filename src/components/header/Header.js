@@ -26,7 +26,7 @@ const Header = () => {
           <div className={styles.header__links}> | </div>
           <button className={styles.header__links}><Link to="/blog" className={styles.header__link}>Blog</Link></button>
         </div>
-        <div className={styles.header__item}>
+        <div className={styles.header__switchTheme}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>
         </div>
       </nav>

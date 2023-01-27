@@ -6,10 +6,6 @@
 }
 
 .light {
-  main {
-    background-color: hsl(44, 41%, 89%);
-  }
-
   .policy {
       background-color: hsl(44, 41%, 89%);
       color: hsl(270, 10%, 20%);
@@ -18,11 +14,6 @@
 }
 
 .dark {
-  main {
-    background-color: hsl(270, 10%, 20%);
-    
-  }
-  
   .policy {
     background-color: hsl(270, 10%, 20%);
     color: $white;
@@ -46,6 +37,8 @@
     margin-top: 5.5em;
     text-align: center;
     font-size: clamp(2em, 3vh, 3em);
+    font-family: 'Roboto Flex';
+    font-stretch: 100%;
     font-weight: 230;
   }
 
