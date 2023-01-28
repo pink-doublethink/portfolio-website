@@ -206,7 +206,7 @@ header {
   transform: rotate(90deg);
   font-weight: 400;
   line-height: calc(1.3em + .2vw);
-  @include changing-font(23, 19);
+  @include changing-font(20, 16);
 }
 
 .cta {

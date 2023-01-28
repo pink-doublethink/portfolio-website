@@ -90,4 +90,8 @@
         @include changing-font(20, 16);
         line-height: calc(1.3em + .2vw);
     }
+
+    &__end {
+        margin-bottom: 5.5em;
+    }
 }

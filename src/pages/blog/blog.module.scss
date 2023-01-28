@@ -21,6 +21,10 @@
         &__title {
             color: $pink-light;
         }
+
+        &__subject {
+            background: $red;
+        }
     }
 }
   
@@ -37,11 +41,15 @@
         color: $white;
 
         &:hover {
-            box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
-            -5px -5px 10px rgba(0,0,0,0.25);
+            box-shadow: 5px 5px 10px rgba(255,255,255,0.3),
+            -5px -5px 10px rgba(255,255,255,0.3);
         }
         &__title {
             color: $old-color-primary; 
+        }
+
+        &__subject {
+            background-color: $old-bg-variant;
         }
     }
 
@@ -62,33 +70,32 @@
 
 .article {
     margin-top: 9em;
-    height: 450px;
     transition: box-shadow 0.3s ease 0s;
     width: 1100px;
-    // background: purple;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
     &__container {
-        width: 560px;
-        height: 360px;
+        width: 1000px;
+        height: 400px;
         display: flex;
-        flex-direction: row;
         -webkit-box-pack: justify;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     &__boxes {
+        margin-left: 2%;
+        width: 95%;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
 
     &__img {
-        width: 240px;
-        height: 300px;
+        width: 100%;
+        height: 65%;
         position: relative;
     }
 
@@ -99,16 +106,19 @@
 
     &__subject {
         position: absolute;
-        bottom: 20%;
-        right: 20%;
-        height: 20px;
+        color: $white;
+        bottom: 26%;
+        left: 0%;
+        height: 30px;
         width: 60px;
-        background: #666;
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__decr {
-
+        width: 100%;
+        height: 83%;
     }
 
     &__title {
@@ -117,12 +127,7 @@
         @include changing-font(28, 22);
         line-height: 1.3333333;
         text-shadow: 0 1px 1px rgb(0 0 0 / 50%),
-    0px 2px 2px rgb(0 0 0 / 50%);
-        // background-image: linear-gradient(120deg, rgb(170, 21, 21) 0%, rgb(230, 60, 46) 100%);
-        // background-repeat: no-repeat;
-        // background-size: 100% 0px;
-        // background-position: 0px 100%;
-        // transition: all 0.3s ease 0s;
+                    0px 2px 2px rgb(0 0 0 / 50%);
     }
 
     &__text {
@@ -133,9 +138,10 @@
     }
 
     &__date {
-        margin-top: 1em;
+        width: 100%;
+        height: 17%;
         font-weight: 500;
-        @include changing-font(18, 14);
+        @include changing-font(20, 16);
         line-height: calc(1.3em + .2vw);
         display: flex;
         flex-direction: column;
@@ -147,7 +153,7 @@
     }
 
     &__update {
-
+        display: none;
     }
 }
 
@@ -155,6 +161,10 @@
 @media (max-width:1200px) {
     .article {
         width: 900px;
+
+        &__container {
+            width: 800px;
+        }
     }
 }
 
@@ -164,27 +174,90 @@
         overflow: hidden;
 
         &__container {
-            width: 90%;
-            height: 90%;
-            display: block;
+            width: 600px;
         }
     }
 }
 
 @media (max-width: 768px) {
+    .light {
+        .article {
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+                -5px -5px 10px rgba(0,0,0,0.1);
+        }
+    }
+      
+    .dark {
+        .article {
+            box-shadow: 5px 5px 10px rgba(255,255,255,0.2),
+                -5px -5px 10px rgba(255,255,255,0.2);
+        }
+    }
+
     .article {
         width: 500px;
+        height: 600px;
+        justify-content: start;
+
+        &__container {
+            width: 400px;
+            display: block;
+        }
+
+        &__boxes {
+            width: 95%;
+            height: 50%;
+            display: block
+        }
+    
+        &__img {
+            margin-top: 1em;
+            width: 400px;
+        }
+    
+        &__date {
+            margin-top: 4em;
+        }
     }
 }
 
 @media (max-width: 525px) {
     .article {
         width: 350px;
+
+        &__container {
+            width: 300px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 55%;
+        }
+
+        &__title {
+            margin-top: 1em;
+        }
+    
+        &__text {
+            margin-top: 1em;
+        }
+
+        &__date {
+            margin-top: 6.5em;
+        }
     }
 }
 
 @media (max-width: 375px) {
     .article {
         width: 300px;
+
+        &__container {
+            width: 250px;
+        }
+
+        &__img {
+            width: 250px;
+        }
     }
 }

@@ -9,7 +9,7 @@
 }
 
 .title {
-  @include changing-font(40, 30);
+  @include changing-font(40, 20);
   line-height: 2.25rem;
   letter-spacing: 1px;
   text-align: center;
@@ -121,7 +121,7 @@
     border-radius: 0 0 2rem 2rem;
 
     h3 {
-      @include changing-font(28, 22);
+      @include changing-font(21, 15);
       line-height: 1.3333333;
       text-align: center;
     }

@@ -2,7 +2,7 @@ import styles from "./contact.module.scss";
 import { useContext, useRef } from "react";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from "../../helpers/ThemeContext";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import TG from "../../assets/telegram.svg";
 import VK from "../../assets/vk.svg";
 import WTA from "../../assets/whatsap.svg";
