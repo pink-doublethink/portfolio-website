@@ -8,7 +8,7 @@ const BecameFrontDev = () => {
   return (
     <div className={styles[theme]}>
       <Helmet>
-        <title>Как я стал фронтенд разработчиком</title>
+        <title>Мой путь к профессии фронтенд разработчика</title>
       </Helmet>
       <div className={styles.article}>
       <div className={styles.article__container}>

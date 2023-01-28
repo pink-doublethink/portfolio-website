@@ -31,7 +31,7 @@ const Blog = () => {
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/blog/becameFrontDev">
-                                <h2 className={styles.article__title}>Маркус против Титании</h2>
+                                <h2 className={styles.article__title}>Мой путь к профессии фронтенд разработчика</h2>
                             </Link>
                             <p className={styles.article__text}>Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. </p>
                         </div>

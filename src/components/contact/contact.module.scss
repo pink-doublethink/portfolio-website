@@ -1,4 +1,6 @@
 @use '../../scss/abstracts/variables' as *;
+@import '../../scss/abstracts/mixin';
+
 
 .light {
   .background {
@@ -177,12 +179,15 @@
 }
 
 .subtitle {
-  font-size: 1.3rem;
+  @include changing-font(30, 24);
+  line-height: 1.1111111;
   text-align: center;
 }
 
 .tittle {
-  font-size: 2.4rem;
+  @include changing-font(40, 30);
+  line-height: 2.25rem;
+  letter-spacing: 1px;
   text-align: center;
 }
 
@@ -324,11 +329,11 @@ p {
 }
 
 .contacts__policy {
-height: 51px;
-width: 220px;
+  height: 51px;
+  width: 220px;
   margin: 0 auto;
-  line-height: 18px;
-  font-size: 1rem;
+  @include changing-font(20, 16);
+  line-height: calc(1.3em + .2vw);
   display: flex;
   align-items: center;
 }
@@ -347,8 +352,8 @@ width: 220px;
 }
 
 .contacts__btn {
-  font-size: 14px;
-  line-height: 21px;
+  @include changing-font(18, 14);
+  line-height: 20px;
 }
 
 @media (max-width: 75em) {

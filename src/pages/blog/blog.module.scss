@@ -1,4 +1,5 @@
 @use '../../scss/abstracts/variables' as *;
+@import '../../scss/abstracts/mixin';
 
 .light {
     .blog {
@@ -11,6 +12,12 @@
     .article {
         background-color: hsl(44, 41%, 89%);
         color: hsl(270, 10%, 20%);
+
+        &:hover {
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+            -5px -5px 10px rgba(0,0,0,0.1);
+        }
+        
         &__title {
             color: $pink-light;
         }
@@ -28,6 +35,11 @@
     .article {
         background-color: hsl(270, 10%, 20%);
         color: $white;
+
+        &:hover {
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+            -5px -5px 10px rgba(0,0,0,0.25);
+        }
         &__title {
             color: $old-color-primary; 
         }
@@ -52,8 +64,7 @@
     margin-top: 9em;
     height: 450px;
     transition: box-shadow 0.3s ease 0s;
-    box-shadow: #666 0px 0px 2rem -1rem;
-    width: 700px;
+    width: 1100px;
     // background: purple;
     display: flex;
     flex-direction: column;
@@ -103,19 +114,29 @@
     &__title {
         margin-top: 1.7em;
         font-weight: 700;
-        font-size: 1.7em;
+        @include changing-font(28, 22);
+        line-height: 1.3333333;
+        text-shadow: 0 1px 1px rgb(0 0 0 / 50%),
+    0px 2px 2px rgb(0 0 0 / 50%);
+        // background-image: linear-gradient(120deg, rgb(170, 21, 21) 0%, rgb(230, 60, 46) 100%);
+        // background-repeat: no-repeat;
+        // background-size: 100% 0px;
+        // background-position: 0px 100%;
+        // transition: all 0.3s ease 0s;
     }
 
     &__text {
         margin-top: 1em;
         font-weight: 500;
-        font-size: 1.1em;
+        @include changing-font(20, 16);
+        line-height: calc(1.3em + .2vw);
     }
 
     &__date {
         margin-top: 1em;
         font-weight: 500;
-        font-size: 1.3em;
+        @include changing-font(18, 14);
+        line-height: calc(1.3em + .2vw);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -127,5 +148,43 @@
 
     &__update {
 
+    }
+}
+
+
+@media (max-width:1200px) {
+    .article {
+        width: 900px;
+    }
+}
+
+@media (max-width:992px) {
+    .article {
+        width: 700px;
+        overflow: hidden;
+
+        &__container {
+            width: 90%;
+            height: 90%;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        width: 500px;
+    }
+}
+
+@media (max-width: 525px) {
+    .article {
+        width: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    .article {
+        width: 300px;
     }
 }

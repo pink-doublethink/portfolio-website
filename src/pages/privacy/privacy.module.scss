@@ -1,4 +1,5 @@
 @use '../../scss/abstracts/variables' as *;
+@import '../../scss/abstracts/mixin';
 
 .container {
   width: 75%;
@@ -36,7 +37,9 @@
   &__title {
     margin-top: 5.5em;
     text-align: center;
-    font-size: clamp(2em, 3vh, 3em);
+    @include changing-font(40, 30);
+    line-height: 2.25rem;
+    letter-spacing: 1px;
     font-family: 'Roboto Flex';
     font-stretch: 100%;
     font-weight: 230;
@@ -47,22 +50,31 @@
   }
 
   &__paragraph {
+    @include changing-font(24, 19);
+    line-height: 1.3333333;
     margin-top: 3em;
   }
 
   &__subtitle {
+    @include changing-font(20, 16);
     margin-top: 1.5em;
   }
 
   &__subparagraph {
+    @include changing-font(20, 16);
+    line-height: calc(1.3em + .2vw);
     margin-top: 1.5em;
   }
 
   &__nestedList {
+    @include changing-font(20, 16);
+    line-height: calc(1.3em + .2vw);
     margin-top: 1.5em;
   }
 
   &__clause {
+    @include changing-font(20, 16);
+    line-height: calc(1.3em + .2vw);
     margin-top: 1.5em;
   }
 }
