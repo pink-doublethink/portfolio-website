@@ -1,9 +1,11 @@
 @use '../../scss/abstracts/variables' as *;
+@import '../../scss/abstracts/mixin';
 
 .light {
   
   .nav__themeTogle:before  {
-    background: $green-light;
+    content: '☀️';
+    background: #8f5e61;
   }
 
   .header__container  {
@@ -26,7 +28,8 @@
   }
   
   .nav__themeTogle:before  {
-    background:$old-color-primary;
+    content: '🌙';
+    background:$old-bg-variant;
   }
 
   .header__container  {
@@ -67,7 +70,7 @@
     align-content: center;
   }
 
-  &__item {
+  &__switchTheme {
     padding-top: 20px;
     width: 70px;
     height: 70px;
@@ -82,7 +85,8 @@
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    font-size: 1.1rem;
+    @include changing-font(24, 20);
+    line-height: 1.3333333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +133,6 @@
   }
 
   &__themeTogle:before  {
-    content: '';
     position: absolute;
     width: 33px;
     height: 33px;
@@ -137,6 +140,10 @@
     top: 13%;
     left: 3%;
     background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include changing-font(18, 14);
     transform: scale(1.1);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s;

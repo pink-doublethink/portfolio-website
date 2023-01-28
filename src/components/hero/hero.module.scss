@@ -1,14 +1,33 @@
 @use '../../scss/abstracts/variables' as *;
+@import '../../scss/abstracts/mixin';
+
+
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: 'Roboto Flex';
+    src: url('../../assets/fonts/variable/RobotoFlex.ttf') format('ttf');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+  }
+
+  .title  {
+    font-family: 'Roboto Flex';
+    font-variation-settings: 'wght' 880, 'slnt' -9;
+  }
+}
 
 .subtitle {
   margin-top: 17px;
   font-weight: 500;
-  font-size: 1.5rem;
+  @include changing-font(30, 24);
+  line-height: 1.1111111;
   text-align: center;
 }
 
 .title {
-  font-size: 2.4rem;
+  @include changing-font(40, 30);
+  line-height: 2.25rem;
+  letter-spacing: 1px;
   text-align: center;
   margin-top: 17px;
 }
@@ -123,8 +142,9 @@ header {
 
 .hero {
   &__subtitle {
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-top: 10px;
+    line-height: 1.1111111;
+    @include changing-font(30, 24);
     font-weight: 500;
     text-align: center;
   }
@@ -164,7 +184,7 @@ header {
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
-  bottom:8%;
+  bottom:7%;
   margin: 3rem auto 0 auto;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
@@ -185,7 +205,8 @@ header {
   bottom: 17%;
   transform: rotate(90deg);
   font-weight: 400;
-  font-size: 1.3rem;
+  line-height: calc(1.3em + .2vw);
+  @include changing-font(20, 16);
 }
 
 .cta {
