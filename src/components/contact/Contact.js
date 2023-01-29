@@ -36,7 +36,7 @@ const Contact = () => {
       >
         <h5 className={styles.subtitle}>Контакты</h5>
         <h2 className={styles.tittle}>Свяжитесь со мной</h2>
-        <div className={styles.container}>
+        <div className={styles.container1}>
           <div className={styles.contacts__wrapper}>
             <div className={styles.contacts__photo}>
               <div className={styles.contact__options}>

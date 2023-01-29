@@ -109,18 +109,6 @@
     gap: .7rem;
   }
 
-  &__me {
-    width: 80%;
-    border-radius: 2rem;
-    background: linear-gradient(
-      45deg,
-      $old-color-primary,
-      transparent
-    );
-    display: grid;
-    place-items: center;
-  }
-
   &__me_image {
     grid-column: 2 / 6;
     position: relative;
@@ -168,52 +156,9 @@
     line-height: calc(1.3em + .2vw);
     @include changing-font(18, 14);
   }
-
-  &__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  &__card {
-    background: $old-bg-variant;
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: $transition;
-
-    h5 {
-      @include changing-font(18, 14);
-      line-height: calc(1.3em + .2vw);
-    }
-
-    small {
-      @include changing-font(18, 14);
-      line-height: calc(1.3em + .2vw);
-      color: $old-color-light;
-    }
-
-    p {
-      margin: 2rem 0 2.6rem;
-      color: $old-color-light;
-    }
-  }
-
-  &__card:hover {
-    background: transparent;
-    border-color: $old-bg-variant;
-    cursor: default;
-  }
-
-  &__icon {
-    color: $old-color-primary;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
   .about {
     &__container {
       display: block;
@@ -222,7 +167,7 @@
       padding: 0 100px;
     }
 
-    &__me {
+    &__me_image {
       width: 50%;
       margin: 2rem auto 4rem;
     }
@@ -239,11 +184,5 @@
       padding: 0 20px;
     }
 
-  }
-}
-
-@media(max-width: 100px) {
-  .about {
-    margin: 0;
   }
 }

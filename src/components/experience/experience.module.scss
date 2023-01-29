@@ -1,6 +1,10 @@
 @use '../../scss/abstracts/variables' as *;
 @import '../../scss/abstracts/mixin';
 
+.container {
+  width: $container-width-lg;
+  margin: 0 auto;
+}
 
 .subtitle {
   @include changing-font(30, 24);
@@ -153,7 +157,11 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .container {
+    width: $container-width-md;
+  }
+
   .exp {
     height: auto;
 
@@ -164,7 +172,11 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  .container {
+    width: $container-width-sm;
+  }
+
   .exp__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;

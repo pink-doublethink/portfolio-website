@@ -2,7 +2,7 @@
 @import '../../scss/abstracts/mixin';
 
 .container {
-  width: 75%;
+  width: $container-width-lg;
   margin: 0 auto;
 }
 
@@ -151,24 +151,24 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .container {
+    width: $container-width-md;
+  }
+
   .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
   }
-
-  .container {
-    width:$container-width-md;
-  }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  .container {
+    width: $container-width-sm;
+  }
+
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .container {
-    width:$container-width-sm;
   }
 }

@@ -1,7 +1,6 @@
 @use '../../scss/abstracts/variables' as *;
 @import '../../scss/abstracts/mixin';
 
-
 @supports (font-variation-settings: normal) {
   @font-face {
     font-family: 'Roboto Flex';
