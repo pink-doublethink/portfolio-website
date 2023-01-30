@@ -204,16 +204,7 @@
   }
 }
 
-.contacts {
-  padding: 120px 0 90px 0;
-
-  &__wrapper {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 400px 585px;
-    justify-content: space-between;
-  }
-
+.contact {
   &__options {
     display: flex;
     flex-direction: column;
@@ -251,6 +242,17 @@
 
   &__option_Em {
     color: #9c27b0;
+  }
+}
+
+.contacts {
+  padding: 120px 0 90px 0;
+
+  &__wrapper {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
   }
 
   &__photo {
@@ -535,7 +537,6 @@ textarea {
   resize: none;
 }
 
-
 .gradientInputAnimation {
   position: relative;
 
@@ -590,6 +591,15 @@ textarea {
   &__input:valid ~ i::before,
   &__input:focus ~ i::before {
     left: 0;
+  }
+}
+
+@keyframes bank {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 250px;
   }
 }
 

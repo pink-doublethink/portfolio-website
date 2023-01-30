@@ -1,7 +1,7 @@
 import "../scss/_main.scss";
 import { lazy, Suspense, useContext } from "react";
 import { ThemeContext } from "../helpers/ThemeContext";
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
 import {Header, Spinner} from "../components";
 
 const Home = lazy(() => import('../pages/Home'));
@@ -36,9 +36,9 @@ const App = () => {
                         <Route exact path="/blog/becameFrontDev">
                             <BecameFrontDev/>
                         </Route>
-                        <Route path="*">
+                         <Route path="*">
                             <Page404/>
-                        </Route>
+                        </Route> 
                     </Switch>
                 </Suspense>
             </main>

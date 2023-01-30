@@ -13,11 +13,10 @@
   }
 
   .header__link {
-    color: $accent-light;
+    color: $text-dark;
   }
 
-  .header__link.active {
-    background: $old-bg;
+  .header__link:hover{
     color: $white;
   }
 }
@@ -37,15 +36,9 @@
   }
 
   .header__link {
-    color: $old-color-light;
-  }
-
-  .header__link.active {
-    background: $old-bg;
-    color: $white;
+    color: $old-color-primary;
   }
 }
-
 
 
 .header {
@@ -82,6 +75,7 @@
 
   &__links {
     background: transparent;
+    position: relative;
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
@@ -90,10 +84,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover .header__link::after {
+      width: 90px;
+    }
   }
 
-  &__link:hover {
-    background: rgba(0, 0, 0, 0.3);
+  &__link {
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 25%;
+      width: 0;
+      height: 2px;
+      background-color: rgb(250, 250, 250);
+      transition: all 0.3s ease 0s;
+      z-index: 50;
+    }
   }
 
   &__logo {
