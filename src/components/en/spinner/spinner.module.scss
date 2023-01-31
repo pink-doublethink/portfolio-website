@@ -1,0 +1,20 @@
+@use '../../../scss/abstracts/variables' as *;
+
+.light {
+    .spinner {
+        background-color: hsl(44, 41%, 89%);
+    }
+}
+  
+.dark {
+    .spinner {
+        background-color: hsl(270, 10%, 20%);
+    }
+}
+
+.spinner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

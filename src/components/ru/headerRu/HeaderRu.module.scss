@@ -1,0 +1,164 @@
+@use '../../../scss/abstracts/variables' as *;
+@import '../../../scss/abstracts/mixin';
+
+.light {
+  
+  .nav__themeTogle:before  {
+    content: '☀️';
+    background: #8f5e61;
+  }
+
+  .header__container  {
+    background-color: $pink-9;
+  }
+
+  .header__link {
+    color: $text-dark;
+  }
+
+  .header__link:hover{
+    color: $white;
+  }
+}
+
+.dark {
+  .nav__themeTogle:checked {
+    background: $shadow-light;
+  }
+  
+  .nav__themeTogle:before  {
+    content: '🌙';
+    background:$old-bg-variant;
+  }
+
+  .header__container  {
+    background-color: $blue-1;
+  }
+
+  .header__link {
+    color: $old-color-primary;
+  }
+}
+
+
+.header {
+  display: block;
+  top: 0;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 90px;
+    -webkit-mask: linear-gradient(to top,#0000 20px,#000 0),
+    radial-gradient(20px at top,#000 97%,#0000) bottom / calc(1.9 * 16px) 20px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  &__switchTheme {
+    padding-top: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+
+  &__links {
+    background: transparent;
+    position: relative;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    @include changing-font(24, 20);
+    line-height: 1.3333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .header__link::after {
+      width: 90px;
+    }
+  }
+
+  &__link {
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 25%;
+      width: 0;
+      height: 2px;
+      background-color: rgb(250, 250, 250);
+      transition: all 0.3s ease 0s;
+      z-index: 50;
+    }
+  }
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.nav {
+  &__toobleDicr {
+    display: none;
+  }
+
+  &__themeTogle {
+    padding-top: 20px;
+    position: relative;
+    width: 15px;
+    height: 5px;
+    -webkit-appearance: none;
+    background: transparent;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+
+  &__themeTogle:checked {
+    background: #03a9f4;
+  }
+
+  &__themeTogle:before  {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border-radius: 20px;
+    top: 13%;
+    left: 3%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include changing-font(18, 14);
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+
+  &__themeTogle:checked:before {
+    left: 20px;
+  }
+}
