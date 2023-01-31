@@ -1,5 +1,5 @@
 import "../scss/_main.scss";
-import { useEffect, useState, lazy, Suspense, useContext } from "react";
+import { useEffect, useState, lazy, Suspense, useContext, } from "react";
 import { ThemeContext } from "../helpers/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
@@ -24,6 +24,7 @@ const App = () => {
   const { theme } = useContext(ThemeContext);
   const [language, setLanguage] = useState("en");
   
+  
   useEffect(() => {
     const platformLanguage =
       window.navigator &&
@@ -44,11 +45,12 @@ const App = () => {
             <main>
                 <Suspense fallback={<Spinner/>}>
                     <Routes>
-                        <Route exact path='/' element={language === "en" ? (<HomePage/>) : (<HomePageRu/>)}/>
-                        <Route exact path={`/privacy`} element={language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)}/>
-                        <Route exact path={`/blog`} element={language === "en" ? (<BlogPage/>) : (<BlogPageRu/>)}/>
-                        <Route exact path={`/blog/lucaDaCostaBook`} element={language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>)}/>
-                        <Route exact path={`/blog/becameFrontDev`} element={language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>)}/>
+                        <Route exact path={`/`} element={language === "en" ? (<HomePage/>) : (<HomePageRu/>)}/>
+                        <Route exact path={`/${language}`} element={language === "en" ? (<HomePage/>) : (<HomePageRu/>)}/>
+                        <Route exact path={`/${language}/privacy`} element={language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)}/>
+                        <Route exact path={`/${language}/blog`} element={language === "en" ? (<BlogPage/>) : (<BlogPageRu/>)}/>
+                        <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>)}/>
+                        <Route exact path={`/${language}/blog/becameFrontDev`} element={language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>)}/>
                         <Route exact path="*" element={<Page404/>}/>
                     </Routes>
                 </Suspense>

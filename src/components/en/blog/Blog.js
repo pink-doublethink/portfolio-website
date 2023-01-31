@@ -14,7 +14,7 @@ const Blog = () => {
         <div className={styles.blog__container}>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/blog/becameFrontDev">
+                    <Link to="/en/blog/becameFrontDev">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>Боепик</div>
@@ -22,7 +22,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/blog/becameFrontDev">
+                            <Link to="/en/blog/becameFrontDev">
                                 <h2 className={styles.article__title}>Мой путь к профессии фронтенд разработчика</h2>
                             </Link>
                             <p className={styles.article__text}>Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. </p>
@@ -36,7 +36,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/blog/lucaDaCostaBook">
+                    <Link to="/en/blog/lucaDaCostaBook">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>Боепик</div>
@@ -44,7 +44,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/blog/lucaDaCostaBook">
+                            <Link to="/en/blog/lucaDaCostaBook">
                                 <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
                             </Link>
                             <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
@@ -58,7 +58,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/blog/lucaDaCostaBook">
+                    <Link to="/en/blog/lucaDaCostaBook">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>Боепик</div>
@@ -66,7 +66,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/blog/lucaDaCostaBook">
+                            <Link to="/en/blog/lucaDaCostaBook">
                                 <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
                             </Link>
                             <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>

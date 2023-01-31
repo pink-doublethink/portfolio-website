@@ -12,7 +12,7 @@ const BlogPageRu = () => {
         <meta
             name="description"
             content="Фронтенд разработчик с опытом работы на React/Next.js/TypeScript. Работая над проектами я заинтересован создавать Продукты, расширяющие возможности людей."
-            />
+          />
       </Helmet>
       <BlogRu />
       <FooterRu />

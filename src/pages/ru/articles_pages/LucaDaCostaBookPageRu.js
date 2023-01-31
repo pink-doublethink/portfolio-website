@@ -8,7 +8,7 @@ const LucaDaCostaBookPageRu = () => {
   return (
     <div className={theme}>
       <Helmet>
-        <title>Алексей Овсянников - фронтенд разработчик из Москвы</title>
+        <title>Рецензия на книгу "Тестируем JavaScript"</title>
       </Helmet>
       <LucaDaCostaBookRu/>
       <FooterRu/>
