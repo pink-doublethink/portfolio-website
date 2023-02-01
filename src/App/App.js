@@ -4,20 +4,23 @@ import { ThemeContext } from "../helpers/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
+import {ErrorPage} from "../pages/en";
+import {ErrorPageRu} from "../pages/ru";
 
 const HomePage = lazy(() => import('../pages/en/HomePage'));
 const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
 const BlogPage = lazy(() => import('../pages/en/BlogPage'));
+
 const BecameFrontDevPage = lazy(() => import('../pages/en/articles_pages/BecameFrontDevPage'));
 const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDaCostaBookPage'));
 
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
 const PrivacyPageRu = lazy(() => import('../pages/ru/PrivacyPageRu'));
 const BlogPageRu = lazy(() => import('../pages/ru/BlogPageRu'));
+
 const BecameFrontDevPageRu = lazy(() => import('../pages/ru/articles_pages/BecameFrontDevPageRu'));
 const LucaDaCostaBookPageRu = lazy(() => import('../pages/ru/articles_pages/LucaDaCostaBookPageRu'));
 
-const Page404 = lazy(() => import('../pages/404/Page404'));
 
 
 const App = () => {
@@ -37,6 +40,7 @@ const App = () => {
       setLanguage("ru");
     }
   }, []);
+  const P404 = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>)
   
   return (
     <div className={theme}>
@@ -51,7 +55,7 @@ const App = () => {
                         <Route exact path={`/${language}/blog`} element={language === "en" ? (<BlogPage/>) : (<BlogPageRu/>)}/>
                         <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>)}/>
                         <Route exact path={`/${language}/blog/becameFrontDev`} element={language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>)}/>
-                        <Route exact path="*" element={<Page404/>}/>
+                        <Route exact path="*" element={P404}/>
                     </Routes>
                 </Suspense>
             </main>

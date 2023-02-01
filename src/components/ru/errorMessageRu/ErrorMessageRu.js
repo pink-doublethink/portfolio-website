@@ -1,16 +1,12 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../helpers/ThemeContext";
+import { ThemeContext } from "../../../helpers/ThemeContext";
 import {Link} from 'react-router-dom';
-import {Helmet} from "react-helmet";
-import styles from "./page404.module.scss";
+import styles from "./ErrorMessageRu.module.scss";
 
-const Page404 = () => {
+const ErrorMessageRu = () => {
     const { theme } = useContext(ThemeContext);
     return (
         <div className={styles[theme]}>
-            <Helmet>
-                <title>Cтраница не найдена</title>
-            </Helmet>
             <div className={styles.ErrPage}>
                 <div className={styles.ErrPage__box}>
 
@@ -25,4 +21,4 @@ const Page404 = () => {
     )
 }
 
-export default Page404;
+export default ErrorMessageRu;

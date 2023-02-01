@@ -1,11 +1,6 @@
 @use '../../../scss/abstracts/variables' as *;
 @import '../../../scss/abstracts/mixin';
 
-.container {
-  width: $container-width-lg;
-  margin: 0 auto;
-}
-
 .subtitle {
   @include changing-font(30, 24);
   line-height: 1.1111111;
@@ -102,9 +97,6 @@
 }
 
 
-
-
-
 .exp {
   border-radius: 0 0 2rem 2rem;
   height: fit-content;
@@ -157,28 +149,42 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .container {
-    width: $container-width-md;
-  }
-
+@media (max-width: 1450px) {
   .exp {
-    height: auto;
-
     &__container {
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: .45rem;
+    }
+    &__articles {
+    grid-column: 2 / 11;
     }
   }
 }
 
-@media (max-width: 600px) {
-  .container {
-    width: $container-width-sm;
-  }
+@media (max-width: 1024px) {
+  .exp {
+    height: auto;
 
-  .exp__container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    &__container {
+      grid-template-columns: repeat(30, 1fr);
+      gap: .35rem;
+    }
+
+    &__articles {
+      grid-column: 3 / 27;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .6rem
+    }
   }
 }
+
+// @media (max-width: 600px) {
+//   .container {
+//     width: $container-width-sm;
+//   }
+
+//   .exp__container {
+//     grid-template-columns: 1fr;
+//     gap: 1.5rem;
+//   }
+// }

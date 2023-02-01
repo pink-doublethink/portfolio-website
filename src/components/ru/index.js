@@ -5,10 +5,11 @@ import BlogRu from "./blogRu/BlogRu"
 import ExperienceRu from "./experienceRu/ExperienceRu";
 import PortfolioRu from "./portfolioRu/PortfolioRu";
 import ContactRu from "./contactRu/ContactRu";
+import ErrorMessageRu from "./errorMessageRu/ErrorMessageRu";
 import PrivacyRu from "./privacyRu/PrivacyRu";
 import FooterRu from "./footerRu/FooterRu";
 
 import BecameFrontDevRu from "./articles/howIBecameFrontedDevRu/becameFrontDevRu";
 import LucaDaCostaBookRu from "./articles/lucaDaCostaBookRu/lucaDaCostaBookRu";
 
-export {HeaderRu, HeroRu, AboutRu, BlogRu, PrivacyRu, ExperienceRu, PortfolioRu, ContactRu, FooterRu, BecameFrontDevRu, LucaDaCostaBookRu}; 
+export {HeaderRu, HeroRu, AboutRu, BlogRu, PrivacyRu, ExperienceRu, PortfolioRu, ErrorMessageRu, ContactRu, FooterRu, BecameFrontDevRu, LucaDaCostaBookRu}; 

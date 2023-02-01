@@ -40,21 +40,25 @@ const ExperienceRu = () => {
                 <h3>UI/UX Design</h3>
               </div>
               <ul className={styles.exp__list}>
-                <li>
+              <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
+                </li>
+                <li>
+                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
               </ul>
             </article>
@@ -63,25 +67,21 @@ const ExperienceRu = () => {
                 <h3>Web Development</h3>
               </div>
               <ul className={styles.exp__list}>
-                <li>
+              <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
@@ -100,11 +100,11 @@ const ExperienceRu = () => {
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
