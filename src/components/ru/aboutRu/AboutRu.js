@@ -13,8 +13,8 @@ const AboutRu = () => {
         <div className={`${styles.container} ${styles.about__container}`}>
           <div className={styles.about__me_image}>
             <picture width="450" height="700">
-              <source srcSet={meWebp} type="image/webp" className={styles.about__image} />
-              <source srcSet={meAvif} type="image/avif" className={styles.about__image} />
+              <source srcSet={meWebp} type="image/webp" />
+              <source srcSet={meAvif} type="image/avif" />
               <img src={meJpg} alt="About me" className={styles.about__image} />
             </picture>
           </div>

@@ -43,8 +43,8 @@ const Hero = () => {
           </div>
           <div className={styles.me}>
             <picture>
-              <source srcSet={MEwebp} type="image/webp" className={styles.me__image} />
-              <source srcSet={MEavif} type="image/avif" className={styles.me__image}/>
+              <source srcSet={MEwebp} type="image/webp" />
+              <source srcSet={MEavif} type="image/avif" />
               <img src={MEpng} alt="me" className={styles.me__image} />
             </picture>
           </div>

@@ -12,10 +12,10 @@ const About = () => {
       <section id="about" className={`${styles.about} ${styles.background}`}>
         <div className={`${styles.container} ${styles.about__container}`}>
           <div className={styles.about__me_image}>
-            <picture className={styles.about__image} width="450" height="700">
+            <picture width="450" height="700">
               <source srcSet={meWebp} type="image/webp" />
               <source srcSet={meAvif} type="image/avif" />
-              <img src={meJpg} alt="About me" />
+              <img src={meJpg} alt="About me" className={styles.about__image} />
             </picture>
           </div>
           <div className={styles.about__content}>
