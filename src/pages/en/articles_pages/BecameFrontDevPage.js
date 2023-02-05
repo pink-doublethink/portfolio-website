@@ -8,7 +8,15 @@ const BecameFrontDevPage = () => {
   return (
     <div className={theme}>
       <Helmet>
-        <title>My path to becoming a Front-end Developer</title>
+        <title>From Real Estate to Client Interface Developer: My Journey and Must-Have Resources</title>
+        <meta
+          name="description"
+          content="Discover valuable resources to help you transition from your current profession to front-end developer. Get an in-depth assessment of each resource and see which ones are worth your time and effort!"
+        />
+        <meta 
+          name="author" 
+          content="Alexei Ovsyannikov" 
+        />
       </Helmet>
       <BecameFrontDev/>
       <Footer/>
