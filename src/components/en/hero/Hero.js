@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../helpers/ThemeContext";
 import styles from "./hero.module.scss";
-import ME from "../../../assets/ME.png";
+import MEpng from "../../../assets/img/ME.png";
+import MEavif from "../../../assets/img/ME-Av.avif";
+import MEwebp from "../../../assets/img/ME-Wp.webp";
 import CV from "../../../assets/cv.pdf";
 import VK from "../../../assets/vk.svg";
 import WTA from "../../../assets/whatsap.svg";
@@ -40,7 +42,11 @@ const Hero = () => {
             </a>
           </div>
           <div className={styles.me}>
-            <img src={ME} alt="me" className={styles.me__image} />
+            <picture>
+              <source srcSet={MEwebp} type="image/webp" />
+              <source srcSet={MEavif} type="image/avif" />
+              <img src={MEpng} alt="me" className={styles.me__image} />
+            </picture>
           </div>
           <a href="#contact" className={styles.scroll__down}>
             Scroll Down

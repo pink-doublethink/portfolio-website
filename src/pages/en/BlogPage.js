@@ -9,6 +9,10 @@ const BlogPage = () => {
     <div className={theme}>
       <Helmet>
         <title>Articles - Alexei Ovsyannikov</title>
+        <meta
+          name="description"
+          content="In my blog, I explore the exciting world of front-end development. In the articles, we'll delve into the latest CSS trends and explore the React ecosystem with all its quirks and wonders. Get ready for some serious code-based fun!"
+        />
       </Helmet>
       <Blog/>
       <Footer/>

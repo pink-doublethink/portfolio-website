@@ -9,6 +9,10 @@ const HomePage = () => {
     <div className={theme}>
       <Helmet>
         <title>Alexei Ovsyannikov - Frontend Developer from Moscow</title>
+        <meta
+          name="description"
+          content="Front-end developer with React/Next.js/TypeScript experience. Working on projects, I am interested in creating Products that empower people."
+        />
       </Helmet>
       <Hero />
       <About />

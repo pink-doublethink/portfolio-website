@@ -178,13 +178,12 @@ header {
 }
 
 .me {
-  // position: relative;
   width: 22rem;
-  height: 30rem;
+  height: 29rem;
   position: absolute;
   left: calc(50% - 11rem);
   bottom:7%;
-  margin: 3rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
 
@@ -192,8 +191,8 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 95%;
-    height: 95%;
+    width: 97%;
+    height: 97%;
     align-content: center;
   }
 }

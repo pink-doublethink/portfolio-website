@@ -40,22 +40,30 @@ const App = () => {
       setLanguage("ru");
     }
   }, []);
-  const P404 = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>)
-  
+
+  const Head = language === "en" ? (<Header/>) : (<HeaderRu/>);
+  const Home = language === "en" ? (<HomePage/>) : (<HomePageRu/>);
+  const Privacy = language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)
+  const Blog = language === "en" ? (<BlogPage/>) : (<BlogPageRu/>);
+  const Error = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>);
+
+  const BecameFrontDev = language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>);
+  const LucaDaCostaBook = language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>);
+
   return (
     <div className={theme}>
         <Router>
-        {language === "en" ? (<Header/>) : (<HeaderRu/>)}
+        {Head}
             <main>
                 <Suspense fallback={<Spinner/>}>
                     <Routes>
-                        <Route exact path={`/`} element={language === "en" ? (<HomePage/>) : (<HomePageRu/>)}/>
-                        <Route exact path={`/${language}`} element={language === "en" ? (<HomePage/>) : (<HomePageRu/>)}/>
-                        <Route exact path={`/${language}/privacy`} element={language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)}/>
-                        <Route exact path={`/${language}/blog`} element={language === "en" ? (<BlogPage/>) : (<BlogPageRu/>)}/>
-                        <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>)}/>
-                        <Route exact path={`/${language}/blog/becameFrontDev`} element={language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>)}/>
-                        <Route exact path="*" element={P404}/>
+                        <Route exact path={`/`} element={Home}/>
+                        <Route exact path={`/${language}`} element={Home}/>
+                        <Route exact path={`/${language}/privacy`} element={Privacy}/>
+                        <Route exact path={`/${language}/blog`} element={Blog}/>
+                        <Route exact path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
+                        <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
+                        <Route exact path="*" element={Error}/>
                     </Routes>
                 </Suspense>
             </main>
