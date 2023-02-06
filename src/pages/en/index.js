@@ -6,5 +6,4 @@ import PrivacyPage from "./PrivacyPage"
 import BecameFrontDevPage from "./articles_pages/BecameFrontDevPage"
 import LucaDaCostaBookPage from "./articles_pages/LucaDaCostaBookPage"
 
-
 export { BlogPage, HomePage, ErrorPage, PrivacyPage, BecameFrontDevPage, LucaDaCostaBookPage};

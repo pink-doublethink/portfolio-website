@@ -4,12 +4,11 @@ import { ThemeContext } from "../helpers/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
-import {ErrorPage} from "../pages/en";
-import {ErrorPageRu} from "../pages/ru";
 
 const HomePage = lazy(() => import('../pages/en/HomePage'));
 const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
 const BlogPage = lazy(() => import('../pages/en/BlogPage'));
+const ErrorPage = lazy(() => import('../pages/en/ErrorPage'));
 
 const BecameFrontDevPage = lazy(() => import('../pages/en/articles_pages/BecameFrontDevPage'));
 const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDaCostaBookPage'));
@@ -17,6 +16,7 @@ const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDa
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
 const PrivacyPageRu = lazy(() => import('../pages/ru/PrivacyPageRu'));
 const BlogPageRu = lazy(() => import('../pages/ru/BlogPageRu'));
+const ErrorPageRu = lazy(() => import('../pages/ru/ErrorPageRu'));
 
 const BecameFrontDevPageRu = lazy(() => import('../pages/ru/articles_pages/BecameFrontDevPageRu'));
 const LucaDaCostaBookPageRu = lazy(() => import('../pages/ru/articles_pages/LucaDaCostaBookPageRu'));

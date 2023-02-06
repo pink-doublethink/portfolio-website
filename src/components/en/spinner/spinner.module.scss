@@ -4,11 +4,19 @@
     .spinner {
         background-color: hsl(44, 41%, 89%);
     }
+
+    .spinmer__color {
+        fill: #1c4595;
+    }
 }
   
 .dark {
     .spinner {
         background-color: hsl(270, 10%, 20%);
+    }
+
+    .spinmer__color {
+        fill: #4bd5ff;
     }
 }
 
@@ -17,4 +25,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }

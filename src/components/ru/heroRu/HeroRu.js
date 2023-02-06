@@ -19,6 +19,13 @@ const HeroRu = () => {
           <h5 className={styles.hero__subtitle}>Привет, я</h5>
           <h2 className={styles.title}>Алексей</h2>
           <h5 className={styles.subtitle}>Фронтенд Разработчик</h5>
+          <div className={styles.me}>
+            <picture>
+              <source srcSet={MEwebp} type="image/webp" />
+              <source srcSet={MEavif} type="image/avif" />
+              <img src={MEpng} alt="me" className={styles.me__image} />
+            </picture>
+          </div>
           <div className={styles.cta}>
             <a href={CV} download className={styles.btn}>
               Download CV
@@ -40,13 +47,6 @@ const HeroRu = () => {
             <a href="http://vk.com" target="_blank" rel="noreferrer">
               <img src={WTA} alt="ВКонтакте" className={styles.hero__icon} />
             </a>
-          </div>
-          <div className={styles.me}>
-          <picture>
-              <source srcSet={MEwebp} type="image/webp" />
-              <source srcSet={MEavif} type="image/avif" />
-              <img src={MEpng} alt="me" className={styles.me__image} />
-            </picture>
           </div>
           <a href="#contact" className={styles.scroll__down}>
             Scroll Down
