@@ -9,13 +9,12 @@ const ErrorMessageRu = () => {
         <div className={styles[theme]}>
             <div className={styles.ErrPage}>
                 <div className={styles.ErrPage__box}>
-
+                    <h1 className={styles.ErrPage__title}>Ошибка 404</h1>
+                    <p className={styles.ErrPage__text}>Cтраница, которую вы ищете, не найдена</p>
+                    <Link href="/ru" className={styles.ErrPage__backLink}>
+                        Вернуться к домашний странице
+                    </Link>
                 </div>
-                <h1 className={styles.ErrPage__title}>Ошибка 404</h1>
-                <p className={styles.ErrPage__text}>Cтраница, которую вы ищете, не найдена</p>
-                <Link href="/" className={styles.ErrPage__backLink}>
-                    Вернуться к домашний странице
-                </Link>
             </div>
         </div>
     )
