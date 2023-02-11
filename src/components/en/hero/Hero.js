@@ -16,9 +16,9 @@ const Hero = () => {
     <div className={styles[theme]}>
       <header id="home" className={styles.hero}>
         <div className={`${styles.container} ${styles.hero__container}`}>
-          <h5 className={styles.hero__subtitle}>Привет, я</h5>
-          <h2 className={styles.title}>Алексей</h2>
-          <h5 className={styles.subtitle}>Фронтенд Разработчик</h5>
+          <h5 className={styles.hero__subtitle}>Hi I am</h5>
+          <h2 className={styles.title}>Alexei</h2>
+          <h5 className={styles.subtitle}>Frontend Developer</h5>
           <div className={styles.me}>
             <picture>
               <source srcSet={MEwebp} type="image/webp" />

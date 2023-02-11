@@ -64,18 +64,18 @@ const Contact = () => {
               <h5
                 className={`${styles.title} ${styles.title_fz16} ${styles.contacts__title}`}
               >
-                Контакты
+                Contacts
               </h5>
               <h2
                 className={`${styles.title} ${styles.title_fz36} ${styles.contacts__subtitle}`}
               >
-                Свяжитесь со мной
+                Contact me
               </h2>
 
               <div
                 className={`${styles.title} ${styles.title_fz14} ${styles.contacts__text}`}
               >
-                Любым удобным для вас способом
+                In any way convenient for you
               </div>
               <div className={styles.contacts__social}>
                 <a href="http://#" className={styles.contacts__link}>
@@ -91,7 +91,7 @@ const Contact = () => {
               <div
                 className={`${styles.title} ${styles.title_fz14} ${styles.contacts__text}`}
               >
-                Или оставьте ваши данные и я сам вам напишу
+                Or leave your details and I will write to you
               </div>
 
               <form
@@ -110,7 +110,7 @@ const Contact = () => {
                     required
                   />
                   <span className={styles.gradientInputAnimation__sp}>
-                    Ваше Имя
+                  Your name
                   </span>
                   <i className={styles.gradientInputAnimation__i}></i>
                 </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                     required
                   />
                   <span className={styles.gradientInputAnimation__sp}>
-                    Ваша почта
+                  Your mail
                   </span>
                   <i className={styles.gradientInputAnimation__i}></i>
                 </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                     required
                   ></textarea>
                   <span className={styles.gradientInputAnimation__sp}>
-                    Ваше сообщение
+                    your message
                   </span>
                   <i className={styles.gradientInputAnimation__i}></i>
                 </div>
@@ -149,13 +149,13 @@ const Contact = () => {
                   <button
                     className={`${styles.contacts__btn} ${styles.btn} ${styles.btn_primary}`}
                   >
-                    Отправить сообщение
+                    send
                   </button>
                   <div className={styles.contacts__policy}>
                     <input required type="checkbox" />
                     <span>
-                      Я согласен(а) с{" "}
-                      <Link to="/en/privacy"><span className={styles.contacts__policyText}>политикой конфиденциальности</span></Link>
+                      I agree with {" "}
+                      <Link to="/en/privacy"><span className={styles.contacts__policyText}>privacy policy</span></Link>
                     </span>
                   </div>
                 </div>
