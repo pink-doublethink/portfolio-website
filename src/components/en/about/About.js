@@ -19,7 +19,7 @@ const About = () => {
             </picture>
           </div>
           <div className={styles.about__content}>
-            <h2 className={styles.title}>Биография</h2>
+            <h2 className={styles.title}>Biography</h2>
             <p className={`${styles.about__text} ${styles.about__text_info}`}>
             In the summer of 21, he changed his real estate business to the development of user interfaces. I adhere to the SOLID philosophy in my code. Studying development was not limited to courses and documentation, as well as studying reports from conferences and general development patterns.
             </p>

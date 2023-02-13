@@ -34,8 +34,8 @@ const Contact = () => {
         className={`${styles.contacts} ${styles.background}`}
         id="contact"
       >
-        <h5 className={styles.subtitle}>Контакты</h5>
-        <h2 className={styles.tittle}>Свяжитесь со мной</h2>
+        <h5 className={styles.subtitle}>Contacts</h5>
+        <h2 className={styles.tittle}>Contact me</h2>
         <div className={styles.container1}>
           <div className={styles.contacts__wrapper}>
             <div className={styles.contacts__photo}>
