@@ -10,8 +10,8 @@ const ErrorPageRu = () => {
       <Helmet>
         <title>Cтраница не найдена</title>
       </Helmet>
-      <ErrorMessageRu/>
-      <FooterRu/>
+      <ErrorMessageRu />
+      <FooterRu />
     </div>
   );
 }

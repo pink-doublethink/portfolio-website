@@ -19,12 +19,12 @@ const About = () => {
             </picture>
           </div>
           <div className={styles.about__content}>
-            <h2 className={styles.title}>Биография</h2>
+            <h2 className={styles.title}>Biography</h2>
             <p className={`${styles.about__text} ${styles.about__text_info}`}>
-            Летом 21 года сменил занятие риэлтерским делом на разработку пользовательских интерфейсов. В своем коде придерживаюсь философии SOLID. Изучая разработку не ограничивался курсами и документацией, так же изучая доклады с конференций и общие паттерны разработки.
+            In the summer of 21, he changed his real estate business to the development of user interfaces. I adhere to the SOLID philosophy in my code. Studying development was not limited to courses and documentation, as well as studying reports from conferences and general development patterns.
             </p>
             <p className={`${styles.about__text} ${styles.about__text_abuot}`}>
-            Работая над проектами мне бы хотелось создавать продукты, расширяющие возможности людей. Хочу стать частью Scrum орентированной команды и видеть результаты в конкретном сервисе или услуге.
+            When working on projects, I would like to create products that empower people. I want to become part of a Scrum oriented team and see results in a specific service or service.
             </p>
           </div>
         </div>

@@ -54,8 +54,8 @@ const PortfolioRu = () => {
   return (
     <div className={styles[theme]}>
       <section id="portfolio" className={styles.portfolio}>
-        <h5 className={styles.subtitle}>Portfolio</h5>
-        <h2 className={styles.title}>My Recent Work</h2>
+        <h5 className={styles.subtitle}>портфолио</h5>
+        <h2 className={styles.title}>Мои недавнии работы</h2>
         <div className={`${styles.container} ${styles.portfolio__container}`}>
           {data.map(({ id, image, title, github, demo }) => {
             return (

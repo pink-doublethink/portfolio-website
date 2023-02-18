@@ -40,7 +40,7 @@
     &__text {
         @include changing-font(20, 16);
         line-height: calc(1.3em + .2vw);
-        margin: min(6vh, 2.45rem) 0 1.1rem;
+        margin: min(6vh, 2.45rem) 0 1.21rem;
     }
 
     &__backLink {

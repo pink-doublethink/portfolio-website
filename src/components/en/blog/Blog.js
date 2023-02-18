@@ -23,13 +23,13 @@ const Blog = () => {
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/en/blog/becameFrontDev">
-                                <h2 className={styles.article__title}>Мой путь к профессии фронтенд разработчика</h2>
+                                <h2 className={styles.article__title}>From Real Estate to Client Interface Developer: My Journey and Must-Have Resources</h2>
                             </Link>
-                            <p className={styles.article__text}>Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. </p>
+                            <p className={styles.article__text}>Discover valuable resources to help you transition from your current profession to front-end developer. Get an in-depth assessment of each resource and see which ones are worth your time and effort!</p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>Updated: 04.02.2023</div>
+                            <div className={styles.article__publish}>Published: 24.01.2023</div>
                         </div>
                     </div>
                 </div>
@@ -45,13 +45,13 @@ const Blog = () => {
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/en/blog/lucaDaCostaBook">
-                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
+                                <h2 className={styles.article__title}>Testing JavaScript by Luca Da Costa: A Comprehensive Review</h2>
                             </Link>
-                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
+                            <p className={styles.article__text}>Find out if Testing JavaScript by Luca Da Costa is the right book for you! Read review to discover if this book is perfect for beginners, advanced developers, or anyone in between. Get the inside scoop on what to expect before you buy</p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>Updated: 04.02.2023</div>
+                            <div className={styles.article__publish}>Published:  24.01.2023</div>
                         </div>
                     </div>
                 </div>
@@ -67,13 +67,13 @@ const Blog = () => {
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/en/blog/lucaDaCostaBook">
-                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
+                                <h2 className={styles.article__title}>Testing JavaScript by Luca Da Costa: A Comprehensive Review</h2>
                             </Link>
-                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
+                            <p className={styles.article__text}>Find out if Testing JavaScript by Luca Da Costa is the right book for you! Read review to discover if this book is perfect for beginners, advanced developers, or anyone in between. Get the inside scoop on what to expect before you buy</p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>Updated: 04.02.2023</div>
+                            <div className={styles.article__publish}>Published:  24.01.2023</div>
                         </div>
                     </div>
                 </div>

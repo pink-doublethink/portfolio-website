@@ -4,8 +4,8 @@ import { ThemeContext } from "../helpers/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
-import {ErrorPage} from "../pages/en";
-import {ErrorPageRu} from "../pages/ru";
+import ErrorPage from "../pages/en/ErrorPage";
+import ErrorPageRu from "../pages/ru/ErrorPageRu";
 
 const HomePage = lazy(() => import('../pages/en/HomePage'));
 const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
@@ -58,12 +58,12 @@ const App = () => {
                 <Suspense fallback={<Spinner/>}>
                     <Routes>
                         <Route exact path={`/`} element={Home}/>
+                        <Route path="*" element={<ErrorPage/>}/>
                         <Route exact path={`/${language}`} element={Home}/>
                         <Route exact path={`/${language}/privacy`} element={Privacy}/>
                         <Route exact path={`/${language}/blog`} element={Blog}/>
                         <Route exact path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
                         <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
-                        <Route exact path="*" element={Error}/>
                     </Routes>
                 </Suspense>
             </main>

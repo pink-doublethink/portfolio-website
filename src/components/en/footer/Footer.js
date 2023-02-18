@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className={styles.footer__contanier}>
                     <div className={styles.footer__logo}>
                         <i className={styles.footer__initials}>
-                            Алексей Овсянников
+                        Alexei Ovsyannikov
                         </i>
                     </div>
                     <div></div>
