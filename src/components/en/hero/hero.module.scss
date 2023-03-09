@@ -180,9 +180,10 @@ header {
 .me {
   width: 22rem;
   height: 29rem;
-  position: absolute;
-  left: calc(50% - 11rem);
-  bottom:7%;
+  // position: absolute;
+  position: relative;
+  left: calc(50% - 50vw);
+  bottom:calc(50% - 38vh);
   margin: 6rem auto 0 auto;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
@@ -216,11 +217,16 @@ header {
 
 @media screen and (max-width: 1024px) {
   header {
-    height: 98vh;
+    height: 100vh;
   }
   .hero__socials,
   .scroll__down {
     display: none;
+  }
+
+  .me {
+    width: 17rem;
+    height: 21rem;
   }
 }
 
