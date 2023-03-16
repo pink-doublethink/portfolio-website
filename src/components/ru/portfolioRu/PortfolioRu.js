@@ -73,7 +73,7 @@ const PortfolioRu = () => {
                     className={`${styles.btn} ${styles.btn_primary}`}
                     tarhet="_blank"
                   >
-                    Live Demo
+                    Демо
                   </a>
                 </div>
               </article>

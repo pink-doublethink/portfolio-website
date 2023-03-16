@@ -33,7 +33,6 @@ const App = () => {
       window.navigator &&
       (window.navigator.language ||
         window.navigator.browserLanguage ||
-        window.navigator.systemLanguage ||
         window.navigator.userLanguage ||
         null);
     if (platformLanguage && platformLanguage.match("ru")) {

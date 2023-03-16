@@ -8,7 +8,7 @@ const ErrorPageRu = () => {
   return (
     <div className={theme}>
       <Helmet>
-        <title>Cтраница не найдена</title>
+        <title>Cтраница не найдена!</title>
       </Helmet>
       <ErrorMessageRu />
       <FooterRu />
