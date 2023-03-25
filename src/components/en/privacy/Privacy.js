@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import styles from "./privacy.module.scss";
 import ImageSlider from "../../../shared/ImageSlider";
 import IMG2 from "../../../assets/portfolio2.jpg";

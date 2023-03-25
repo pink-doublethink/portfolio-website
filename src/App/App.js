@@ -1,6 +1,6 @@
 import "../scss/_main.scss";
 import { useEffect, useState, lazy, Suspense, useContext, } from "react";
-import { ThemeContext } from "../helpers/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../../context/ThemeContext";
 import styles from "./lucaDaCostaBook.module.scss";
 
 const LucaDaCostaBook = () => {

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import styles from "./HeroRu.module.scss";
 import MEpng from "../../../assets/img/ME.png";
 import MEavif from "../../../assets/img/ME-Av.avif";

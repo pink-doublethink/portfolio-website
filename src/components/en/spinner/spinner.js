@@ -1,6 +1,6 @@
 import styles from "./spinner.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 const Spinner = () => {
     const { theme } = useContext(ThemeContext);
 

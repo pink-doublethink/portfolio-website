@@ -1,7 +1,7 @@
 import styles from "./ContactRu.module.scss";
 import { useContext, useRef } from "react";
 import { Link } from 'react-router-dom';
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import emailjs from '@emailjs/browser';
 import TG from "../../../assets/telegram.svg";
 import VK from "../../../assets/vk.svg";

@@ -1,6 +1,6 @@
 import styles from "./footer.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import VK from "../../../assets/vk.svg";
 import WTA from "../../../assets/whatsap.svg";
 import TG from "../../../assets/telegram.svg";

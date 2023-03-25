@@ -1,6 +1,6 @@
 import styles from "./AboutRu.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import meJpg from "../../../assets/img/me-about.JPG";
 import meAvif from "../../../assets/img/me-about-Av.avif";
 import meWebp from "../../../assets/img/me-about-Wp.webp";
