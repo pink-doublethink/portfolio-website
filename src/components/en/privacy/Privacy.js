@@ -1,19 +1,9 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import styles from "./privacy.module.scss";
-import ImageSlider from "../../../shared/ImageSlider";
-import IMG2 from "../../../assets/portfolio2.jpg";
 
 const Privacy = () =>  {
   const { theme } = useContext(ThemeContext);
-
-  const slides = [
-    { url: "https://cdna.artstation.com/p/assets/images/images/029/928/844/large/andreas-rocha-timbercrownpathway-web.jpg?1599062603", title: "beach" },
-    { url: "https://cdna.artstation.com/p/assets/images/images/034/638/022/large/andreas-rocha-andreas-rocha-cragcrownpathwayweb.jpg?1612821058", title: "boat" },
-    { url: "http://localhost:3000/Rt3.jpg", title: "forest" },
-    { url: "http://localhost:3000/RT2.jpg", title: "city" },
-    { url: "http://localhost:3000/Rt1.jpg", title: "italy" },
-  ];
 
   return (
     <div className={styles[theme]}>
@@ -36,9 +26,6 @@ const Privacy = () =>  {
                 </li>
               </ol>
             </li>
-            <div className={styles.slidesContainer1}>
-              <ImageSlider slides={slides} parentWidth={500} />
-            </div>
             <li className={styles.policy__paragraph}>
               <h4 lassName={styles.policy__subtitle}>
               2. Основные понятия, используемые в Политике

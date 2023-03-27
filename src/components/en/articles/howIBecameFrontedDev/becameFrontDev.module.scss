@@ -1,6 +1,19 @@
 @use '../../../../scss/abstracts/variables' as *;
 @import '../../../../scss/abstracts/mixin';
 
+.slidesContainers{
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .slidesContainers{
+        width: 300px;
+    }
+  }
+
 .light {
     .article {
         background-color: hsl(44, 41%, 89%);

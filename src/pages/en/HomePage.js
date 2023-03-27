@@ -6,7 +6,7 @@ import {Hero, About, Experience, Portfolio, Contact, Footer} from "../../compone
 const HomePage = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className={theme}>
+    <div className={theme} style={{ minHeight: '100vh' }}>
       <Helmet>
         <title>Alexei Ovsyannikov - Frontend Developer from Moscow</title>
         <meta

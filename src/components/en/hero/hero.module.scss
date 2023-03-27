@@ -140,6 +140,7 @@ header {
 }
 
 .hero {
+  min-width: 100vh;
   &__subtitle {
     margin-top: 10px;
     line-height: 1.1111111;
