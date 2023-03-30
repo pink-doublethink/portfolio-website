@@ -4,7 +4,7 @@ import { ThemeContext } from "../../../context/ThemeContext";
 import VK from "../../../assets/vk.svg";
 import WTA from "../../../assets/whatsap.svg";
 import TG from "../../../assets/telegram.svg";
-import LinkIn from "../../../assets/icons/github.png";
+import LinkIn from "../../../assets/icons/github.svg";
 import GitHub from "../../../assets/icons/linkedin.png";
 
 const Footer = () => {
