@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import styles from "./hero.module.scss";
 import MEpng from "../../../assets/img/ME.png";
 import MEavif from "../../../assets/img/ME-Av.avif";
@@ -19,13 +19,6 @@ const Hero = () => {
           <h5 className={styles.hero__subtitle}>Hi I am</h5>
           <h2 className={styles.title}>Alexei</h2>
           <h5 className={styles.subtitle}>Frontend Developer</h5>
-          <div className={styles.me}>
-            <picture>
-              <source srcSet={MEwebp} type="image/webp" />
-              <source srcSet={MEavif} type="image/avif" />
-              <img src={MEpng} alt="me" className={styles.me__image} />
-            </picture>
-          </div>
           <div className={styles.cta}>
             <a href={CV} download className={styles.btn}>
               Download CV
@@ -51,6 +44,13 @@ const Hero = () => {
           <a href="#contact" className={styles.scroll__down}>
             Scroll Down
           </a>
+          <div className={styles.me}>
+            <picture>
+              <source srcSet={MEwebp} type="image/webp" />
+              <source srcSet={MEavif} type="image/avif" />
+              <img src={MEpng} alt="me" className={styles.me__image} />
+            </picture>
+          </div>
         </div>
       </header>
     </div>

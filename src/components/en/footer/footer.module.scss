@@ -3,54 +3,76 @@
 
 .light {
     .footer {
-        background: $green-light;
+        background: hsl(44, 41%, 89%);
 
         &__initials {
             color: $old-bg;
+
+            &:nth-child(2)::after {
+                background: hsl(270, 10%, 20%);
+            }
         }
     }
 }
 
 .dark { 
     .footer {
-        background: $old-color-primary;
+        background: hsl(270, 10%, 20%);
 
         &__initials {
-            color: $old-bg;
+            color: $white;
+
+            &:nth-child(2)::after {
+                background: hsl(44, 41%, 89%);
+            }
         }
     }
 }
 
 .footer {
-    height: 100px;
+    height: 110px;
     width: 100%;
+    margin-top: 5vh;
 
     &__contanier {
         display: flex;
-        justify-content: space-around;
-        align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
     }
 
     &__logo {
-        height: 96px;
-        width: 350px;
+        width: fit-content;
+        height: fit-content;
         display: flex;
         align-content: center;
+        gap: 15px;
     }
 
     &__initials {
-        font-weight: 700;
-        @include changing-font(24, 20);
+        font-weight: 500;
+        display: inline-block;
+        position: relative;
+        @include changing-font(20, 16);
         line-height: 1.1111111;
-        display: flex;
-        align-items: center;
+
+        
+        &:nth-child(2)::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 44%;
+            left: -13%; 
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
     }
 
     &__social {
-        height: 90px;
-        width: 300px;
-        display: flex;
-        align-items: center;
+        width: fit-content;
+        height: fit-content;
     }
 
     &__ul {
@@ -74,27 +96,27 @@
     }
 }
 
-@media(max-width:46.875em) {
-    .footer {
-        height: 90px;
+// @media(max-width:46.875em) {
+//     .footer {
+//         height: 90px;
     
-        &__logo {
-            height: 70px;
-        }
+//         &__logo {
+//             height: 70px;
+//         }
     
     
-        &__social {
-            height: 70px;
-            width: 340px;
-        }
+//         &__social {
+//             height: 70px;
+//             width: 340px;
+//         }
     
-        &__ul {
-            gap: 26px;
-        }
+//         &__ul {
+//             gap: 26px;
+//         }
     
-        &__li {
-            height: 33px;
-            width: 33px;
-        }
-    }
-}
+//         &__li {
+//             height: 33px;
+//             width: 33px;
+//         }
+//     }
+// }

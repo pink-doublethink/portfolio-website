@@ -1,7 +1,7 @@
 import styles from "./ContactRu.module.scss";
 import { useContext, useRef } from "react";
 import { Link } from 'react-router-dom';
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import emailjs from '@emailjs/browser';
 import TG from "../../../assets/telegram.svg";
 import VK from "../../../assets/vk.svg";
@@ -42,7 +42,7 @@ const ContactRu = () => {
               <div className={styles.contact__options}>
                 <article className={styles.contact__option}>
                   <BsTelegram className={`${styles.contact__option_icon} ${styles.contact__option_TG}`} />
-                  <h4>Messenger</h4>
+                  <h4>сообщение</h4>
                   <h5>343434222</h5>
                   <a href="http://#" className={styles.contact__a}>Send Messange</a>
                 </article>

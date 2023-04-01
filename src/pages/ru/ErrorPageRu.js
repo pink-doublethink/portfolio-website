@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import {Helmet} from "react-helmet";
-import { ThemeContext } from "../../helpers/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { ErrorMessageRu, FooterRu} from "../../components/ru"
 
 const ErrorPageRu = () => {
@@ -8,7 +8,7 @@ const ErrorPageRu = () => {
   return (
     <div className={theme}>
       <Helmet>
-        <title>Cтраница не найдена</title>
+        <title>Cтраница не найдена!</title>
       </Helmet>
       <ErrorMessageRu />
       <FooterRu />

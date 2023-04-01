@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import {Helmet} from "react-helmet";
-import { ThemeContext } from "../../helpers/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import { BlogRu, FooterRu } from "../../components/ru"
 
 const BlogPageRu = () => {

@@ -1,6 +1,6 @@
 import "../scss/_main.scss";
 import { useEffect, useState, lazy, Suspense, useContext, } from "react";
-import { ThemeContext } from "../helpers/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
@@ -33,7 +33,6 @@ const App = () => {
       window.navigator &&
       (window.navigator.language ||
         window.navigator.browserLanguage ||
-        window.navigator.systemLanguage ||
         window.navigator.userLanguage ||
         null);
     if (platformLanguage && platformLanguage.match("ru")) {
@@ -57,13 +56,13 @@ const App = () => {
             <main>
                 <Suspense fallback={<Spinner/>}>
                     <Routes>
-                        <Route exact path={`/`} element={Home}/>
-                        <Route path="*" element={<ErrorPage/>}/>
-                        <Route exact path={`/${language}`} element={Home}/>
-                        <Route exact path={`/${language}/privacy`} element={Privacy}/>
-                        <Route exact path={`/${language}/blog`} element={Blog}/>
-                        <Route exact path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
-                        <Route exact path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
+                        <Route path={`/`} element={Home}/>
+                        <Route path={`/${language}`} element={Home}/>
+                        <Route path={`/${language}/privacy`} element={Privacy}/>
+                        <Route path={`/${language}/blog`} element={Blog}/>
+                        <Route path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
+                        <Route path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
+                        <Route path={`*`} element={Error}/>
                     </Routes>
                 </Suspense>
             </main>

@@ -32,7 +32,7 @@
 
     &__title {
         @include changing-font(40, 26);
-        line-height: 2.25rem;
+        line-height: 2.24rem;
         letter-spacing: 1px;
         margin: min(6vh, 2.45rem) 0 1.1rem;
     }

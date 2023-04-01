@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import { Link } from 'react-router-dom';
 import styles from "./blog.module.scss";
 import M from "../../../assets/portfolio2.jpg"

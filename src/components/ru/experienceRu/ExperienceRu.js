@@ -1,6 +1,6 @@
 import styles from "./ExperienceRu.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const ExperienceRu = () => {

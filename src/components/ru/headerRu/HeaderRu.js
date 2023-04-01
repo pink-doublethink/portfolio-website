@@ -1,7 +1,7 @@
 import styles from "./HeaderRu.module.scss";
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
-import { ThemeContext } from "../../../helpers/ThemeContext";
+import { ThemeContext } from "../../../context/ThemeContext";
 import MEE from "../../../assets/favicon/favicon.ico";
 
 const HeaderRu = () => {
