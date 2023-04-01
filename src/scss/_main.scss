@@ -57,6 +57,10 @@ img {
   object-fit: cover;
 }
 
+body {
+  scroll-behavior:smooth;
+}
+
 .container {
   width: $container-width-lg;
   margin: 0 auto;

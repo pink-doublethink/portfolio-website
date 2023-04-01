@@ -19,19 +19,19 @@ const Experience = () => {
               <ul className={styles.exp__list}>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Разрабатывал и поддерживал дизайн-системы и руководства по стилю</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Создавал каркасы, прототипы и высокоточные макеты для эффективной передачи дизайнерских идей</p>
+                  <p>Managed a high volume of interface development projects as a freelancer, consistently meeting project deadlines and client expectations</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
                 </li>
               </ul>
             </article>
@@ -40,21 +40,29 @@ const Experience = () => {
                 <h3>UI/UX Design</h3>
               </div>
               <ul className={styles.exp__list}>
-                <li>
+              <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Managed a high volume of interface development projects as a freelancer, consistently meeting project deadlines and client expectations</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
+                </li>
+                <li>
+                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
+                </li>
+                <li>
+                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
                 </li>
               </ul>
             </article>
@@ -63,29 +71,21 @@ const Experience = () => {
                 <h3>Web Development</h3>
               </div>
               <ul className={styles.exp__list}>
-                <li>
+              <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Proven mastery of front-end development technologies such as HTML, CSS, and JavaScript through successful freelance projects</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Managed a high volume of interface development projects as a freelancer, consistently meeting project deadlines and client expectations</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Managed a high volume of interface development projects as a freelancer, consistently meeting project deadlines and client expectations</p>
                 </li>
               </ul>
             </article>
@@ -94,25 +94,21 @@ const Experience = () => {
                 <h3>Content Creation</h3>
               </div>
               <ul className={styles.exp__list}>
-                <li>
+              <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Interacted with clients to conceptualize and develop custom interface solutions for their projects.</p>
                 </li>
               </ul>
             </article>

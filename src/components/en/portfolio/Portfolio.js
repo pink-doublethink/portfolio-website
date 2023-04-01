@@ -1,48 +1,52 @@
 import styles from "./portfolio.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
-import IMG2 from "../../../assets/portfolio2.jpg";
-
+import estate from "../../../assets/img/estate.png";
+import tabletop from "../../../assets/img/tabletop.jpg";
+import empatphy from "../../../assets/img/empatphy.png";
+import ecomerce from "../../../assets/img/ecomerce.png";
+import rozanova from "../../../assets/img/rozanova.png";
+import country from "../../../assets/img/country.webp";
 
 const data = [
   {
     id: 1,
-    image: IMG2,
+    image: estate,
     title: "Real Estate Website",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 2,
-    image: IMG2,
+    image: tabletop,
     title: "Tabletop forum",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 3,
-    image: IMG2,
+    image: empatphy,
     title: "Empatphy Mesum",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 4,
-    image: IMG2,
+    image: ecomerce,
     title: "Pulsometr Landing Page",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 5,
-    image: IMG2,
+    image: rozanova,
     title: "Olga Rozanova Website",
     github: "http://#",
     demo: "http://#"
   },
   {
     id: 6,
-    image: IMG2,
+    image: country,
     title: "Country Info",
     github: "http://#",
     demo: "http://#"
