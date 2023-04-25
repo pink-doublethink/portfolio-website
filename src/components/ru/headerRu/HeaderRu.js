@@ -11,15 +11,15 @@ const HeaderRu = () => {
       <nav className={styles.header__container}>
         <div></div>
         <div className={styles.header__logo}>
-          <img src={MEE} alt="About me"  className={styles.header__img} />
+        <Link to="/ru/"><img src={MEE} alt="About me"  className={styles.header__img} /></Link>
         </div>
         <div></div>
         <div></div>
         <div></div>
         <div className={styles.header__items}>
-          <button className={styles.header__links}><Link to="/ru" className={styles.header__link}>Обо мне</Link></button>
+          <button className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link}>Блог</Link></button>
           <div className={styles.header__links}> | </div>
-          <button className={styles.header__links}><Link to="/ru/blog" className={styles.header__link}>Статьи</Link></button>
+          <button className={styles.header__links}><Link to="/ru/about/" className={styles.header__link}>Обо мне</Link></button>
         </div>
         <div className={styles.header__switchTheme}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>

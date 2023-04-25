@@ -26,6 +26,7 @@ const Privacy = () =>  {
                 </li>
               </ol>
             </li>
+
             <li className={styles.policy__paragraph}>
               <h4 lassName={styles.policy__subtitle}>
               2. Основные понятия, используемые в Политике

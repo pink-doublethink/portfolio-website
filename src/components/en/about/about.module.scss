@@ -102,8 +102,11 @@
 
 
 .about {
-  margin-top: 35vh;
+  min-height: 100vh;
+  overflow: hidden;
+  
   &__container {
+    margin-top: 25vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: .7rem;

@@ -10,12 +10,12 @@ const Header = () => {
     <div className={`${styles.header} ${styles[theme]}`}>
       <nav className={styles.header__container}>
         <div className={styles.header__logo}>
-          <img src={logo} alt="About me"  className={styles.header__img} />
+        <Link to="/en/" className={styles.header__link}><img src={logo} alt="About me"  className={styles.header__img} /></Link>
         </div>
         <div className={styles.header__items}>
-          <button className={styles.header__links}><Link to="/en" className={styles.header__link}>Home</Link></button>
+          <button className={styles.header__links}><Link to="/en/blog/" className={styles.header__link}>Blog</Link></button>
           <div className={styles.header__links}> | </div>
-          <button className={styles.header__links}><Link to="/en/blog" className={styles.header__link}>Articles</Link></button>
+          <button className={styles.header__links}><Link to="/en/about/" className={styles.header__link}>About Me</Link></button>
         </div>
         <div className={styles.header__switchTheme}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>

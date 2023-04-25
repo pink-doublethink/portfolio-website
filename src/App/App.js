@@ -10,6 +10,7 @@ import ErrorPageRu from "../pages/ru/ErrorPageRu";
 const HomePage = lazy(() => import('../pages/en/HomePage'));
 const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
 const BlogPage = lazy(() => import('../pages/en/BlogPage'));
+const AboutPage = lazy(() => import('../pages/en/AboutPage'));
 
 const BecameFrontDevPage = lazy(() => import('../pages/en/articles_pages/BecameFrontDevPage'));
 const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDaCostaBookPage'));
@@ -17,6 +18,8 @@ const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDa
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
 const PrivacyPageRu = lazy(() => import('../pages/ru/PrivacyPageRu'));
 const BlogPageRu = lazy(() => import('../pages/ru/BlogPageRu'));
+const AboutPageRu = lazy(() => import('../pages/ru/AboutPageRu'));
+
 
 const BecameFrontDevPageRu = lazy(() => import('../pages/ru/articles_pages/BecameFrontDevPageRu'));
 const LucaDaCostaBookPageRu = lazy(() => import('../pages/ru/articles_pages/LucaDaCostaBookPageRu'));
@@ -42,8 +45,9 @@ const App = () => {
 
   const Head = language === "en" ? (<Header/>) : (<HeaderRu/>);
   const Home = language === "en" ? (<HomePage/>) : (<HomePageRu/>);
-  const Privacy = language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)
+  // const Privacy = language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)
   const Blog = language === "en" ? (<BlogPage/>) : (<BlogPageRu/>);
+  const About = language === "en" ? (<AboutPage/>) : (<AboutPageRu/>);
   const Error = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>);
 
   const BecameFrontDev = language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>);
@@ -58,7 +62,7 @@ const App = () => {
                     <Routes>
                         <Route path={`/`} element={Home}/>
                         <Route path={`/${language}`} element={Home}/>
-                        <Route path={`/${language}/privacy`} element={Privacy}/>
+                        <Route path={`/${language}/about`} element={About}/>
                         <Route path={`/${language}/blog`} element={Blog}/>
                         <Route path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
                         <Route path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
