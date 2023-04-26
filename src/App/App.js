@@ -14,6 +14,8 @@ const AboutPage = lazy(() => import('../pages/en/AboutPage'));
 
 const BecameFrontDevPage = lazy(() => import('../pages/en/articles_pages/BecameFrontDevPage'));
 const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDaCostaBookPage'));
+const UsingLayersInCSSPage = lazy(() => import('../pages/en/articles_pages/UsingLayersInCSSPage'));
+const OpinionNestingInCSSPage = lazy(() => import('../pages/en/articles_pages/OpinionNestingInCSSPage'));
 
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
 const PrivacyPageRu = lazy(() => import('../pages/ru/PrivacyPageRu'));
@@ -23,8 +25,8 @@ const AboutPageRu = lazy(() => import('../pages/ru/AboutPageRu'));
 
 const BecameFrontDevPageRu = lazy(() => import('../pages/ru/articles_pages/BecameFrontDevPageRu'));
 const LucaDaCostaBookPageRu = lazy(() => import('../pages/ru/articles_pages/LucaDaCostaBookPageRu'));
-
-
+const UsingLayersInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/UsingLayersInCSSPageRu'));
+const OpinionNestingInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/OpinionNestingInCSSPageRu'));
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -50,6 +52,8 @@ const App = () => {
   const About = language === "en" ? (<AboutPage/>) : (<AboutPageRu/>);
   const Error = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>);
 
+  const OpinionNestingInCSS = language === "en" ? (<OpinionNestingInCSSPage/>) : (<OpinionNestingInCSSPageRu/>);
+  const UsingLayersInCSS = language === "en" ? (<UsingLayersInCSSPage/>) : (<UsingLayersInCSSPageRu/>);
   const BecameFrontDev = language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>);
   const LucaDaCostaBook = language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>);
 
@@ -66,6 +70,8 @@ const App = () => {
                         <Route path={`/${language}/blog`} element={Blog}/>
                         <Route path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
                         <Route path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
+                        <Route path={`/${language}/blog/usingLayersInCSS`} element={UsingLayersInCSS}/>
+                        <Route path={`/${language}/blog/opinionNestingInCSS`} element={OpinionNestingInCSS}/>
                         <Route path={`*`} element={Error}/>
                     </Routes>
                 </Suspense>
