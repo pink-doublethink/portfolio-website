@@ -1,4 +1,6 @@
-import React from 'react'
+import { useContext } from "react";
+import { ThemeContext } from "../../../../context/ThemeContext";
+import styles from "./usingLayersInCSS.module.scss";
 
 const UsingLayersInCSS = () => {
   const { theme } = useContext(ThemeContext);

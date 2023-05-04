@@ -6,6 +6,7 @@ import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
 import ErrorPage from "../pages/en/ErrorPage";
 import ErrorPageRu from "../pages/ru/ErrorPageRu";
+import ScrollToTopOnPageChange from "../utils/ScrollToTopOnPageChange";
 
 const HomePage = lazy(() => import('../pages/en/HomePage'));
 const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
@@ -60,7 +61,8 @@ const App = () => {
   return (
     <div className={theme}>
         <Router>
-        {Head}
+          <ScrollToTopOnPageChange />
+          {Head}
             <main>
                 <Suspense fallback={<Spinner/>}>
                     <Routes>

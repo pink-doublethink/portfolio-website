@@ -6,16 +6,13 @@
 - In this project I implemented: theme switcher; work with an external API for sending letters.
 
 ---
-### How to install and run a project
----
-**1.** Clone the repository on your computer;
+## Install and run commands
+----
 
-**2.** Install project dependencies;
-```shell
-npm i
-```
+Clone the repository on your computer. Then run the following commands from the root of the project, from the terminal:
 
-**3.** Run project in development mode;
-```shell
-npm start
-```
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm start`          | Starts local dev server at `localhost:3000`        |
+| `npm build`        | Build your production site to `./dist/   

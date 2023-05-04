@@ -11,5 +11,7 @@ import FooterRu from "./footerRu/FooterRu";
 
 import BecameFrontDevRu from "./articles/howIBecameFrontedDevRu/becameFrontDevRu";
 import LucaDaCostaBookRu from "./articles/lucaDaCostaBookRu/lucaDaCostaBookRu";
+import OpinionNestingInCSSRu from "./articles/opinionNestingInCSSRu/OpinionNestingInCSSRu";
+import UsingLayersInCSSRu from "./articles/usingLayersInCSSRu/UsingLayersInCSSRu";
 
-export {HeaderRu, HeroRu, AboutRu, BlogRu, PrivacyRu, ExperienceRu, PortfolioRu, ErrorMessageRu, ContactRu, FooterRu, BecameFrontDevRu, LucaDaCostaBookRu}; 
+export {HeaderRu, HeroRu, AboutRu, BlogRu, PrivacyRu, ExperienceRu, PortfolioRu, ErrorMessageRu, ContactRu, FooterRu, BecameFrontDevRu, LucaDaCostaBookRu, OpinionNestingInCSSRu,UsingLayersInCSSRu}; 

@@ -58,7 +58,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/lucaDaCostaBook">
+                    <Link to="/en/blog/usingLayersInCSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>Боепик</div>
@@ -66,7 +66,29 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/en/blog/lucaDaCostaBook">
+                            <Link to="/en/blog/usingLayersInCSS">
+                                <h2 className={styles.article__title}>Testing JavaScript by Luca Da Costa: A Comprehensive Review</h2>
+                            </Link>
+                            <p className={styles.article__text}>Find out if Testing JavaScript by Luca Da Costa is the right book for you! Read review to discover if this book is perfect for beginners, advanced developers, or anyone in between. Get the inside scoop on what to expect before you buy</p>
+                        </div>
+                        <div className={styles.article__date}>
+                            <div className={styles.article__update}>Updated: 04.02.2023</div>
+                            <div className={styles.article__publish}>Published:  24.01.2023</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article className={styles.article}>
+                <div className={styles.article__container}>
+                    <Link to="/en/blog/opinionNestingInCSS">
+                        <div className={styles.article__img}>
+                            <img src={M} alt="" className={styles.article__image} />
+                            <div className={styles.article__subject}>Боепик</div>
+                        </div>
+                    </Link>
+                    <div className={styles.article__boxes}>
+                        <div className={styles.article__decr}>
+                            <Link to="/en/blog/opinionNestingInCSS">
                                 <h2 className={styles.article__title}>Testing JavaScript by Luca Da Costa: A Comprehensive Review</h2>
                             </Link>
                             <p className={styles.article__text}>Find out if Testing JavaScript by Luca Da Costa is the right book for you! Read review to discover if this book is perfect for beginners, advanced developers, or anyone in between. Get the inside scoop on what to expect before you buy</p>
