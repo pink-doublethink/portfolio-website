@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../context/ThemeContext";
-import { Privacy, Footer } from "../../components/en"
 
 const PrivacyPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -10,8 +9,6 @@ const PrivacyPage = () => {
       <Helmet>
         <title>Terms of use</title>
       </Helmet>
-      <Privacy/>
-      <Footer/>
     </div>
   );
 }
