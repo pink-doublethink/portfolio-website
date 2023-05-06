@@ -2,24 +2,19 @@ import styles from "./HeaderRu.module.scss";
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from "../../../context/ThemeContext";
-import MEE from "../../../assets/favicon/favicon.ico";
 
 const HeaderRu = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div className={`${styles.header} ${styles[theme]}`}>
       <nav className={styles.header__container}>
-        <div></div>
-        <div className={styles.header__logo}>
-        <Link to="/ru/"><img src={MEE} alt="About me"  className={styles.header__img} /></Link>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div lassName={styles.header__filler}></div>
         <div className={styles.header__items}>
-          <button className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link}>Блог</Link></button>
+          <a className={styles.header__links}><Link to="/ru/" className={styles.header__link}>Главная</Link></a>
           <div className={styles.header__links}> | </div>
-          <button className={styles.header__links}><Link to="/ru/about/" className={styles.header__link}>Обо мне</Link></button>
+          <a className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link}>Блог</Link></a>
+          <div className={styles.header__links}> | </div>
+          <a className={styles.header__links}><Link to="/ru/about/" className={styles.header__link}>Обо мне</Link></a>
         </div>
         <div className={styles.header__switchTheme}>
          <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>

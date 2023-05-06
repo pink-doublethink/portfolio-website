@@ -17,19 +17,29 @@ const BlogRu = () => {
                     <Link to="/ru/blog/becameFrontDev">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
-                            <div className={styles.article__subject}>Боепик</div>
+                            <div className={styles.article__subject}>
+                                Сareer
+                            </div>
                         </div>
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/ru/blog/becameFrontDev">
-                                <h2 className={styles.article__title}>Мой путь к профессии фронтенд разработчика</h2>
+                                <h2 className={styles.article__title}>
+                                    Мой путь к профессии фронтенд разработчика
+                                </h2>
                             </Link>
-                            <p className={styles.article__text}>Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. </p>
+                            <p className={styles.article__text}>
+                                Увидев лидером Джека Доу я испугался кондиций и уже по заготовленному плану заменил свиноматку в изначальной банде на Брина. Увидев вторым мастером титульного Паркера, я сначала не понял что к чему. 
+                            </p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>
+                                Обновлено: 04.02.2023
+                                </div>
+                            <div className={styles.article__publish}>
+                                Опубликовано: 24.01.2023
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,19 +49,29 @@ const BlogRu = () => {
                     <Link to="/ru/blog/lucaDaCostaBook">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
-                            <div className={styles.article__subject}>Боепик</div>
+                            <div className={styles.article__subject}>
+                                Testing
+                            </div>
                         </div>
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/ru/blog/lucaDaCostaBook">
-                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
+                                <h2 className={styles.article__title}>
+                                    Рецензия на книгу "Тестируем JavaScript"
+                                </h2>
                             </Link>
-                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
+                            <p className={styles.article__text}>
+                                В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга
+                            </p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>
+                                Обновлено: 04.02.2023
+                            </div>
+                            <div className={styles.article__publish}>
+                                Опубликовано: 24.01.2023
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,19 +81,29 @@ const BlogRu = () => {
                     <Link to="/ru/blog/usingLayersInCSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
-                            <div className={styles.article__subject}>Боепик</div>
+                            <div className={styles.article__subject}>
+                                CSS
+                            </div>
                         </div>
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/ru/blog/usingLayersInCSS">
-                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
+                                <h2 className={styles.article__title}>
+                                    @layers: Новый способ организации CSS
+                                </h2>
                             </Link>
-                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
+                            <p className={styles.article__text}>
+                                Для решения этой проблемы в CSS была предложена новая функция: @layers. Эта функция позволяет разработчикам группировать правила CSS в логические единицы, называемые слоями, и контролировать их взаимодействие друг с другом. В этой статье я объясню, что такое @layers, как они работают, каковы их преимущества и недостатки.
+                            </p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>
+                                Обновлено: 04.02.2023
+                            </div>
+                            <div className={styles.article__publish}>
+                                Опубликовано: 24.01.2023
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,19 +113,29 @@ const BlogRu = () => {
                     <Link to="/ru/blog/opinionNestingInCSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
-                            <div className={styles.article__subject}>Боепик</div>
+                            <div className={styles.article__subject}>
+                                CSS
+                            </div>
                         </div>
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
                             <Link to="/ru/blog/opinionNestingInCSS">
-                                <h2 className={styles.article__title}>Рецензия на книгу "Тестируем JavaScript"</h2>
+                                <h2 className={styles.article__title}>
+                                    Вложенность CSS: Более простой способ написания селекторов
+                                </h2>
                             </Link>
-                            <p className={styles.article__text}>В этой статье я поделюсь своими мыслями, на которые меня натолкнула эта книга</p>
+                            <p className={styles.article__text}>
+                                CSS - это мощный язык для оформления веб-страниц, но он также может быть сложным и трудным в поддержке. Одной из распространенных проблем, с которыми сталкиваются разработчики, является управление каскадом и спецификой правил CSS, особенно при работе с большими кодовыми базами или несколькими авторами.
+                            </p>
                         </div>
                         <div className={styles.article__date}>
-                            <div className={styles.article__update}>Обновлено: 04.02.2023</div>
-                            <div className={styles.article__publish}>Опубликовано: 24.01.2023</div>
+                            <div className={styles.article__update}>
+                                Обновлено: 04.02.2023
+                            </div>
+                            <div className={styles.article__publish}>
+                                Опубликовано: 24.01.2023
+                            </div>
                         </div>
                     </div>
                 </div>

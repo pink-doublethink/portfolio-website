@@ -127,8 +127,8 @@
   &__themeTogle {
     padding-top: 20px;
     position: relative;
-    width: 15px;
-    height: 5px;
+    width: 50px;
+    height: 40px;
     -webkit-appearance: none;
     background: transparent;
     outline: none;
@@ -165,9 +165,12 @@
 
 @media screen and (max-width: 1000px) {
   .header {
+    &__filler {
+      display: none;
+    }
   
     &__container {
-      grid-template-columns: 15% 65% 20%;
+      grid-template-columns: 5% 70% 25%;
     }
 
     &__logo {
@@ -178,15 +181,7 @@
 
 @media screen and (max-width: 700px) {
   .header {
-  
-    &__container {
-      grid-template-columns: 25% 50% 25%;
-      
-    }
-
-    &__logo {
-      margin-left: 10px;
-    }
+    grid-template-columns: 1% 87% 12%;
 
     &__items {
       justify-items: start;
