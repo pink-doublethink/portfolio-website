@@ -1,5 +1,5 @@
 import "../scss/_main.scss";
-import { useEffect, useState, lazy, Suspense, useContext, } from "react";
+import { useEffect, useState, lazy, Suspense, useContext, useMemo } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
@@ -32,19 +32,24 @@ const OpinionNestingInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/
 const App = () => {
   const { theme } = useContext(ThemeContext);
   const [language, setLanguage] = useState("en");
-  
-  
-  useEffect(() => {
-    const platformLanguage =
-      window.navigator &&
-      (window.navigator.language ||
-        window.navigator.browserLanguage ||
-        window.navigator.userLanguage ||
-        null);
-    if (platformLanguage && platformLanguage.match("ru")) {
-      setLanguage("ru");
-    }
-  }, []);
+
+  const createEffectFn = (setLanguage) => {
+    return () => {
+      const platformLanguage =
+        window.navigator &&
+        (window.navigator.language ||
+          window.navigator.browserLanguage ||
+          window.navigator.userLanguage ||
+          null);
+      if (platformLanguage && platformLanguage.match("ru")) {
+        setLanguage("ru");
+      }
+    };
+  };
+
+  const effectFn = useMemo(() => createEffectFn(setLanguage), [setLanguage]);
+
+  useEffect(effectFn, []);
 
   const Head = language === "en" ? (<Header/>) : (<HeaderRu/>);
   const Home = language === "en" ? (<HomePage/>) : (<HomePageRu/>);

@@ -9,15 +9,15 @@ const HeaderRu = () => {
     <div className={`${styles.header} ${styles[theme]}`}>
       <nav className={styles.header__container}>
         <div lassName={styles.header__filler}></div>
-        <div className={styles.header__items}>
-          <a className={styles.header__links}><Link to="/ru/" className={styles.header__link}>Главная</Link></a>
+        <ul className={styles.header__items}>
+          <li className={styles.header__links}><Link to="/ru/" className={styles.header__link} alt="Ссылка на главную">Главная</Link></li>
           <div className={styles.header__links}> | </div>
-          <a className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link}>Блог</Link></a>
+          <li className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link} alt="Ссылка на страницу блога">Блог</Link></li>
           <div className={styles.header__links}> | </div>
-          <a className={styles.header__links}><Link to="/ru/about/" className={styles.header__link}>Обо мне</Link></a>
-        </div>
+          <li className={styles.header__links}><Link to="/ru/about/" className={styles.header__link} alt="Ссылка на страницу обо мне">Обо мне</Link></li>
+        </ul>
         <div className={styles.header__switchTheme}>
-         <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>
+         <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle} alt="Переключение цветовой темы" />
         </div>
       </nav>
     </div>

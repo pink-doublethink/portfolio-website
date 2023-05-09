@@ -14,7 +14,7 @@ const BlogRu = () => {
         <div className={styles.blog__container}>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/ru/blog/becameFrontDev">
+                    <Link to="/ru/blog/becameFrontDev" alt="ссылка на статью о том, как я стал фронтальным разработчиком">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -24,7 +24,7 @@ const BlogRu = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/ru/blog/becameFrontDev">
+                            <Link to="/ru/blog/becameFrontDev" alt="ссылка на статью о том, как я стал фронтальным разработчиком">
                                 <h2 className={styles.article__title}>
                                     Мой путь к профессии фронтенд разработчика
                                 </h2>
@@ -46,7 +46,7 @@ const BlogRu = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/ru/blog/lucaDaCostaBook">
+                    <Link to="/ru/blog/lucaDaCostaBook" alt="ссылка на рецензию на книгу о тестировании">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -56,7 +56,7 @@ const BlogRu = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/ru/blog/lucaDaCostaBook">
+                            <Link to="/ru/blog/lucaDaCostaBook" alt="ссылка на рецензию на книгу о тестировании">
                                 <h2 className={styles.article__title}>
                                     Рецензия на книгу "Тестируем JavaScript"
                                 </h2>
@@ -78,7 +78,7 @@ const BlogRu = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/ru/blog/usingLayersInCSS">
+                    <Link to="/ru/blog/usingLayersInCSS" alt="ссылка на статью о директиве @layers в CSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -88,7 +88,7 @@ const BlogRu = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/ru/blog/usingLayersInCSS">
+                            <Link to="/ru/blog/usingLayersInCSS" alt="ссылка на статью о директиве @layers в CSS">
                                 <h2 className={styles.article__title}>
                                     @layers: Новый способ организации CSS
                                 </h2>
@@ -110,7 +110,7 @@ const BlogRu = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/ru/blog/opinionNestingInCSS">
+                    <Link to="/ru/blog/opinionNestingInCSS" alt="ссылка на статью о вложенности в нативном CSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -120,7 +120,7 @@ const BlogRu = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/ru/blog/opinionNestingInCSS">
+                            <Link to="/ru/blog/opinionNestingInCSS" alt="ссылка на статью о вложенности в нативном CSS">
                                 <h2 className={styles.article__title}>
                                     Вложенность CSS: Более простой способ написания селекторов
                                 </h2>

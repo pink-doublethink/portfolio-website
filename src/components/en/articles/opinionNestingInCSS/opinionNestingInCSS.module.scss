@@ -1,6 +1,13 @@
 @use '../../../../scss/abstracts/variables' as *;
 @import '../../../../scss/abstracts/mixin';
 
+.codeContainers{
+    width: 500px;
+    height: 480px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
 .light {
     .article {
         background-color: hsl(44, 41%, 89%);
@@ -62,7 +69,6 @@
         margin: 0 5%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
@@ -70,19 +76,21 @@
         margin-top: 5em;
         font-weight: 700;
         @include changing-font(40, 30);
+        align-self: center;
     }
 
     &__box {
         margin-top: 5em;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: center;
     }
 
     &__subtitle {
         font-weight: 700;
         @include changing-font(30, 24);
+        align-self: center;
     }
 
     &__paragraph {
@@ -92,6 +100,6 @@
     }
 
     &__end {
-        margin-bottom: 5.5em;
+        margin-bottom: 2.5em;
     }
 }

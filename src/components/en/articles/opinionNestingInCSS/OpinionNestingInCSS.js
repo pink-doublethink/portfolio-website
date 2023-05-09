@@ -122,18 +122,22 @@ const OpinionNestingInCSS = () => {
                   <p className={styles.article__paragraph}>
                     CSS is a powerful language for styling web pages, but it can also be verbose and repetitive. One of the common challenges that developers face is writing long and complex selectors that target specific elements or components. For example, consider the following code:
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex1}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={dark}>
+                        {ex1}
+                    </SyntaxHighlighter>
+                  </div>
                   <p className={styles.article__paragraph}>
                     This code defines some styles for a card component that contains a heading, a paragraph, and a button. However, to target each element inside the card, we have to repeat the .card class name in every selector. This can be tedious and error-prone, especially when working with nested components or multiple levels of specificity. 
                   </p>
                   <p className={styles.article__paragraph}>
                     To address this problem, a new feature has been proposed for CSS: nesting. This feature allows developers to write selectors inside other selectors, using the & symbol to refer to the parent selector. For example, the previous code can be rewritten as: 
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex2}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={dark}>
+                        {ex2}
+                    </SyntaxHighlighter>
+                  </div>
                   <p className={styles.article__paragraph}>
                     This code is much shorter and cleaner than the original one. It also makes it easier to see the structure and hierarchy of the component. 
                   </p>
@@ -151,9 +155,11 @@ const OpinionNestingInCSS = () => {
                   <p className={styles.article__paragraph}>
                     will be transformed into:
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex4}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={dark}>
+                        {ex4}
+                    </SyntaxHighlighter>
+                  </div>
                   <p className={styles.article__paragraph}>
                     The & symbol can also be combined with other selectors or pseudo-classes to create more complex selectors. For example, the following code:
                   </p>

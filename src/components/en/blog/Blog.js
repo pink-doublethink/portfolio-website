@@ -14,7 +14,7 @@ const Blog = () => {
         <div className={styles.blog__container}>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/becameFrontDev">
+                    <Link to="/en/blog/becameFrontDev" alt="link to an article about how I became a fronted developer">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -24,7 +24,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/en/blog/becameFrontDev">
+                            <Link to="/en/blog/becameFrontDev" alt="link to an article about how I became a fronted developer">
                                 <h2 className={styles.article__title}>
                                     From Real Estate to Client Interface Developer: My Journey and Must-Have Resources
                                 </h2>
@@ -46,7 +46,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/lucaDaCostaBook">
+                    <Link to="/en/blog/lucaDaCostaBook" alt="link to the review of the book about testing">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -56,7 +56,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/en/blog/lucaDaCostaBook">
+                            <Link to="/en/blog/lucaDaCostaBook" alt="link to the review of the book about testing">
                                 <h2 className={styles.article__title}>
                                     Testing JavaScript by Luca Da Costa: A Comprehensive Review
                                 </h2>
@@ -78,7 +78,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/usingLayersInCSS">
+                    <Link to="/en/blog/usingLayersInCSS" alt="link to an article about the @layers CSS directive">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -88,7 +88,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/en/blog/usingLayersInCSS">
+                            <Link to="/en/blog/usingLayersInCSS" alt="link to an article about the @layers CSS directive">
                                 <h2 className={styles.article__title}>
                                     @layers: A New Way to Organize CSS
                                 </h2>
@@ -110,7 +110,7 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/opinionNestingInCSS">
+                    <Link to="/en/blog/opinionNestingInCSS" alt="link to an article about nesting in native CSS">
                         <div className={styles.article__img}>
                             <img src={M} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
@@ -120,7 +120,7 @@ const Blog = () => {
                     </Link>
                     <div className={styles.article__boxes}>
                         <div className={styles.article__decr}>
-                            <Link to="/en/blog/opinionNestingInCSS">
+                            <Link to="/en/blog/opinionNestingInCSS" alt="link to an article about nesting in native CSS">
                                 <h2 className={styles.article__title}>
                                     CSS Nesting: A Simpler Way to Write Selectors
                                 </h2>
