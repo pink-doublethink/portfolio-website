@@ -79,7 +79,7 @@ const App = () => {
                         <Route path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
                         <Route path={`/${language}/blog/usingLayersInCSS`} element={UsingLayersInCSS}/>
                         <Route path={`/${language}/blog/opinionNestingInCSS`} element={OpinionNestingInCSS}/>
-                        <Route path={`*`} element={Error}/>
+                        <Route path="*" element={Error}/>
                     </Routes>
                 </Suspense>
             </main>

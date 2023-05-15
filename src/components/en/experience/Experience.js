@@ -8,8 +8,8 @@ const Experience = () => {
   return (
     <div className={styles[theme]}>
       <section id="services" className={styles.background}>
-        <h5 className={styles.subtitle}>What I Offer</h5>
-        <h2 className={styles.title}>Services</h2>
+          <h5 className={styles.subtitle}>What I Offer</h5>
+          <h2 className={styles.title}>Services</h2>
         <div className={`${styles.container} ${styles.exp__container}`}>
           <div className={styles.exp__articles}>
             <article className={styles.exp}>

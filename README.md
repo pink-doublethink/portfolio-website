@@ -1,10 +1,12 @@
 ----
 ### What is the project about?
 ---
-- This is my personal website repository. In the future, I plan to make a blog about front-end development out of it with information about myself.
+- This is my personal website repository. It contains links to my latest work, my articles on frontend development, and general information about me.
 
-- In this project I implemented: theme switcher; work with an external API for sending letters.
-
+- In this project I implemented: 
+	- created two language versions by redirecting the user to the right version of the site depending on the language of his browser and device;
+	- used a CSS module Styles object and React context to create a color theme;
+	- used variant fonts to create the content composition of the site;
 ---
 ## Install and run commands
 ----

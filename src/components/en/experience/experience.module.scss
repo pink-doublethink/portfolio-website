@@ -5,13 +5,13 @@
 
 .subtitle {
   @include changing-font(30, 24);
-  line-height: 1.1111111;
+  line-height: 1.2111111;
   text-align: center;
 }
 
 .title {
   @include changing-font(40, 20);
-  line-height: 2.25rem;
+  line-height: 2.45rem;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -126,7 +126,7 @@
   }
 
   &__articles {
-    grid-column: 5 / 25;
+    grid-column: 6 / 26;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-columns: 1fr;
