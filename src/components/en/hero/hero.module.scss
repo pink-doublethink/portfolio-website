@@ -83,14 +83,6 @@ header {
     background: $green-light;
     color: $old-bg;
   }
-
-  .hero__socials::after {
-    background: $pink-light;
-  }
-
-  .scroll__down {
-    color: $pink-light;
-  }
 }
 
 .dark {
@@ -129,14 +121,6 @@ header {
     background: $old-color-primary;
     color: $old-bg;
   }
-
-  .hero__socials::after {
-    background: $old-color-primary;
-  }
-
-  .scroll__down {
-    color: $old-color-primary;
-  }
 }
 
 .hero {
@@ -155,33 +139,11 @@ header {
     text-align: center;
     height: 100%;
   }
-
-  &__socials {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.8rem;
-    left: 10%;
-    bottom: 12%;
-
-    &::after {
-      content: "";
-      width: 1px;
-      height: 2rem;
-    }
-  }
-
-  &__icon {
-    max-width: 20px;
-    max-height: 20px;
-  }
 }
 
 .me {
   width: 22rem;
   height: 29rem;
-  // position: absolute;
   position: relative;
   left: calc(50% - 50vw);
   bottom:calc(50% - 38vh);
@@ -197,16 +159,6 @@ header {
     height: 95%;
     align-content: center;
   }
-}
-
-.scroll__down {
-  position: absolute;
-  right: 10%;
-  bottom: 17%;
-  transform: rotate(90deg);
-  font-weight: 400;
-  line-height: calc(1.3em + .2vw);
-  @include changing-font(20, 16);
 }
 
 .cta {

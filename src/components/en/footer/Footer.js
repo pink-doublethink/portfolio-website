@@ -15,11 +15,11 @@ const Footer = () => {
                 <div className={styles.footer__contanier}>
                     <div className={styles.footer__social}>
                         <nav className={styles.footer__ul}>
-                            <li className={styles.footer__li}><a href="https://www.linkedin.com/in/alexei-ovsyannikov/"target="_blank" rel="noreferrer" className={styles.footer__a}><img src={GitHub} alt="GitHub" className={styles.footer__img}/></a></li>
-                            <li className={styles.footer__li}><a href="https://github.com/pink-doublethink" target="_blank" rel="noreferrer" className={styles.footer__a}><img src={LinkIn} alt="LinkedIn" className={styles.footer__img}/></a></li>
-                            <li className={styles.footer__li}><a href="https://t.me/pink_doublethink" target="_blank" rel="noreferrer" className={styles.footer__a}><img src={TG} alt="Telegram" className={styles.footer__img}/></a></li>
-                            <li className={styles.footer__li}><a href="https://vk.com/dark_maestro" target="_blank" rel="noreferrer" className={styles.footer__a}><img src={VK} alt="Vkontacte" className={styles.footer__img}/></a></li>
-                            <li className={styles.footer__li}><a href="#home" target="_blank" rel="noreferrer" className={styles.footer__a}><img src={WTA} alt="WhatsUp" className={styles.footer__img}/></a></li>
+                            <li className={styles.footer__li}><a href="https://www.linkedin.com/in/alexei-ovsyannikov/"target="_blank" rel="noreferrer" className={styles.footer__a} alt="Link to GitHub profile"><img src={GitHub} alt="GitHub" className={styles.footer__img}/></a></li>
+                            <li className={styles.footer__li}><a href="https://github.com/pink-doublethink" target="_blank" rel="noreferrer" className={styles.footer__a} alt="Link to LinkedIn profile"><img src={LinkIn} alt="LinkedIn" className={styles.footer__img}/></a></li>
+                            <li className={styles.footer__li}><a href="https://t.me/pink_doublethink" target="_blank" rel="noreferrer" className={styles.footer__a} alt="Link to Telegram profile"><img src={TG} alt="Telegram" className={styles.footer__img}/></a></li>
+                            <li className={styles.footer__li}><a href="https://vk.com/dark_maestro" target="_blank" rel="noreferrer" className={styles.footer__a} alt="Link to VK profile"><img src={VK} alt="Vkontacte" className={styles.footer__img}/></a></li>
+                            <li className={styles.footer__li}><a href="#home" target="_blank" rel="noreferrer" className={styles.footer__a} alt="Link to WhatsUp profile"><img src={WTA} alt="WhatsUp" className={styles.footer__img}/></a></li>
                         </nav>
                     </div> 
                     <div className={styles.footer__logo}>

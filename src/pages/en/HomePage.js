@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../context/ThemeContext";
-import {Hero, About, Experience, Portfolio, Contact, Footer} from "../../components/en"
+import {Hero, Portfolio, Footer} from "../../components/en"
 
 const HomePage = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,10 +15,7 @@ const HomePage = () => {
         />
       </Helmet>
       <Hero />
-      <About />
-      <Experience />
       <Portfolio />
-      <Contact />
       <Footer />
     </div>
   );

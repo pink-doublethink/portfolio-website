@@ -1,15 +1,17 @@
 @use '../../../scss/abstracts/variables' as *;
 @import '../../../scss/abstracts/mixin';
 
+
+
 .subtitle {
   @include changing-font(30, 24);
-  line-height: 1.1111111;
+  line-height: 1.2111111;
   text-align: center;
 }
 
 .title {
   @include changing-font(40, 20);
-  line-height: 2.25rem;
+  line-height: 2.45rem;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -99,7 +101,6 @@
 
 .exp {
   border-radius: 0 0 2rem 2rem;
-  height: fit-content;
   transition: $transition;
 
   &:hover {
@@ -108,7 +109,8 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(30, 1fr);
+    grid-auto-columns: 1fr;
     gap: .75rem;
   }
 
@@ -124,9 +126,10 @@
   }
 
   &__articles {
-    grid-column: 3 / 10;
+    grid-column: 6 / 26;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
+    grid-auto-columns: 1fr;
     gap: 1rem;
   }
 
@@ -155,12 +158,8 @@
     &__container {
       gap: .45rem;
     }
-    &__articles {
-    grid-column: 2 / 11;
-    }
   }
 }
-
 
 @media (max-width: 1024px) {
   .exp {
@@ -172,7 +171,7 @@
     }
 
     &__articles {
-      grid-column: 4 / 28;
+      grid-column: 3 / 27;
       display: grid;
       grid-template-columns: 1fr;
       gap: .6rem

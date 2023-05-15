@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../context/ThemeContext";
-import {HeroRu, AboutRu, ExperienceRu, PortfolioRu, ContactRu, FooterRu} from "../../components/ru"
+import {HeroRu, PortfolioRu, FooterRu} from "../../components/ru"
 
 const HomePageRu = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,10 +15,7 @@ const HomePageRu = () => {
         />
       </Helmet>
       <HeroRu />
-      <AboutRu />
-      <ExperienceRu />
       <PortfolioRu />
-      <ContactRu />
       <FooterRu />
     </div>
   );

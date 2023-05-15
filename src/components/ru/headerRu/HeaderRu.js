@@ -2,27 +2,22 @@ import styles from "./HeaderRu.module.scss";
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from "../../../context/ThemeContext";
-import MEE from "../../../assets/favicon/favicon.ico";
 
 const HeaderRu = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div className={`${styles.header} ${styles[theme]}`}>
       <nav className={styles.header__container}>
-        <div></div>
-        <div className={styles.header__logo}>
-          <img src={MEE} alt="About me"  className={styles.header__img} />
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className={styles.header__items}>
-          <button className={styles.header__links}><Link to="/ru" className={styles.header__link}>Обо мне</Link></button>
+        <div lassName={styles.header__filler}></div>
+        <ul className={styles.header__items}>
+          <li className={styles.header__links}><Link to="/ru/" className={styles.header__link} alt="Ссылка на главную">Главная</Link></li>
           <div className={styles.header__links}> | </div>
-          <button className={styles.header__links}><Link to="/ru/blog" className={styles.header__link}>Статьи</Link></button>
-        </div>
+          <li className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link} alt="Ссылка на страницу блога">Блог</Link></li>
+          <div className={styles.header__links}> | </div>
+          <li className={styles.header__links}><Link to="/ru/about/" className={styles.header__link} alt="Ссылка на страницу обо мне">Обо мне</Link></li>
+        </ul>
         <div className={styles.header__switchTheme}>
-         <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle}/>
+         <input type="checkbox" onClick={() => setTheme(theme === "light" ? "dark" : "light")} className={styles.nav__themeTogle} alt="Переключение цветовой темы" />
         </div>
       </nav>
     </div>

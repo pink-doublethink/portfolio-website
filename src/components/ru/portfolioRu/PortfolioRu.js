@@ -13,42 +13,42 @@ const data = [
     id: 1,
     image: estate,
     title: "Real Estate Website",
-    github: "http://#",
+    github: "https://github.com/pink-doublethink/real-estate-website",
     demo: "http://#"
   },
   {
     id: 2,
     image: tabletop,
     title: "Tabletop forum",
-    github: "http://#",
-    demo: "http://#"
+    github: "https://github.com/pink-doublethink/malifaux.ru",
+    demo: "https://malifaux.ru"
   },
   {
     id: 3,
     image: empatphy,
     title: "Empatphy Mesum",
-    github: "http://#",
-    demo: "http://#"
+    github: "https://github.com/pink-doublethink/empathy.doublethink.pink",
+    demo: "http://empathy.doublethink.pink"
   },
   {
     id: 4,
     image: ecomerce,
     title: "Pulsometr Landing Page",
-    github: "http://#",
+    github: "https://github.com/pink-doublethink/air-commercial-website",
     demo: "http://#"
   },
   {
     id: 5,
     image: rozanova,
     title: "Olga Rozanova Website",
-    github: "http://#",
-    demo: "http://#"
+    github: "https://github.com/pink-doublethink/rozanova.doublethink.pink",
+    demo: "http://rozanova.doublethink.pink"
   },
   {
     id: 6,
     image: country,
     title: "Country Info",
-    github: "http://#",
+    github: "https://github.com/pink-doublethink/real-estate-website",
     demo: "http://#"
   }
 ];

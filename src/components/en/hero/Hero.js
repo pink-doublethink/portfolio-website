@@ -4,10 +4,7 @@ import styles from "./hero.module.scss";
 import MEpng from "../../../assets/img/ME.png";
 import MEavif from "../../../assets/img/ME-Av.avif";
 import MEwebp from "../../../assets/img/ME-Wp.webp";
-import CV from "../../../assets/cv.pdf";
-import VK from "../../../assets/vk.svg";
-import WTA from "../../../assets/whatsap.svg";
-import TG from "../../../assets/telegram.svg";
+import CV from "../../../assets/Овсянников_Алексей_Фронтенд_разработчик.pdf";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -30,20 +27,6 @@ const Hero = () => {
               Let's Talk
             </a>
           </div>
-          <div className={styles.hero__socials}>
-            <a href="https://t.me/pink_doublethink" target="_blank" rel="noreferrer">
-            <img src={TG} alt="me" className={styles.hero__icon} />
-            </a>
-            <a href="https://vk.com/dark_maestro" target="_blank" rel="noreferrer">
-              <img src={VK} alt="ВКонтакте" className={styles.hero__icon} />
-            </a>
-            <a href="http://vk.com" target="_blank" rel="noreferrer">
-              <img src={WTA} alt="ВКонтакте" className={styles.hero__icon} />
-            </a>
-          </div>
-          <a href="#contact" className={styles.scroll__down}>
-            Scroll Down
-          </a>
           <div className={styles.me}>
             <picture>
               <source srcSet={MEwebp} type="image/webp" />

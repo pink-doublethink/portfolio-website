@@ -14,12 +14,12 @@ const ExperienceRu = () => {
           <div className={styles.exp__articles}>
             <article className={styles.exp}>
               <div className={styles.exp__head}>
-                <h3>UI/UX Design</h3>
+                <h3>Web Development</h3>
               </div>
               <ul className={styles.exp__list}>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Разрабатывал и поддерживал дизайн-системы и руководства по стилю</p>
+                  <p>Участвовал в создание макетов и интерактивных прототипов с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
@@ -27,11 +27,11 @@ const ExperienceRu = () => {
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
+                  <p>Создавал корректные цветовые сочитания цветовых схем в  соотвествии с критериями контрастности для сайтов</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
+                  <p>Создавал адаптации компонентов сайтов для мобильных версий на основе принцепов дизайна</p>
                 </li>
               </ul>
             </article>
@@ -46,7 +46,7 @@ const ExperienceRu = () => {
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
+                  <p>Участвовал в разработке дизайн-системы и созданию руководства по стилю</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
@@ -64,28 +64,20 @@ const ExperienceRu = () => {
             </article>
             <article className={styles.exp}>
               <div className={styles.exp__head}>
-                <h3>Web Development</h3>
+                <h3>Soft Skills</h3>
               </div>
               <ul className={styles.exp__list}>
               <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
+                  <p>Оцениваю гибкие навыки как любые навыки, что не являются Хард навыками, но требуются для успешного проекта</p>
+                </li>
+                <li>
+                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
+                  <p>Считаю важным обсуждение любые детали  проекта на любом его этапе</p>
+                </li>
+                <li>
+                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
                   <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
                 </li>
               </ul>
             </article>
@@ -96,23 +88,15 @@ const ExperienceRu = () => {
               <ul className={styles.exp__list}>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Интегрировал системы управления контентом (CMS), такие как WordPress или Sanity</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Создавал высокоточные макеты и интерактивные прототипы с помощью программного обеспечения для дизайна, такого как Adobe Creative Suite или Sketch</p>
+                  <p>Взаимодействие с создателями контента для внесения изменений в дизайн и макет</p>
                 </li>
                 <li>
                   <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Спроектировал и разработал каркасы и прототипы веб- и мобильных интерфейсов</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
-                </li>
-                <li>
-                  <IoIosCheckmarkCircleOutline className={styles.exp__list_icon} />
-                  <p>Lorem ipsum dolor sit amet consectetur, elit.</p>
+                  <p>Обеспечиваю одинаковую доступность материалов сайта и для скрин ридеров, и для обычных пользователей</p>
                 </li>
               </ul>
             </article>

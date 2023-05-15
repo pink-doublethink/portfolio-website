@@ -9,7 +9,7 @@ const About = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>
-      <section id="about" className={`${styles.about} ${styles.background}`}>
+      <article id="about" className={`${styles.about} ${styles.background}`}>
         <div className={`${styles.container} ${styles.about__container}`}>
           <div className={styles.about__me_image}>
             <picture width="450" height="700">
@@ -21,14 +21,14 @@ const About = () => {
           <div className={styles.about__content}>
             <h2 className={styles.title}>Biography</h2>
             <p className={`${styles.about__text} ${styles.about__text_info}`}>
-            In the summer of 21, he changed his real estate business to the development of user interfaces. I adhere to the SOLID philosophy in my code. Studying development was not limited to courses and documentation, as well as studying reports from conferences and general development patterns.
+            In the summer of 21, he changed his real estate business to the development of user interfaces. I adhere to the SOLID philosophy in my coaade. Studying development was not limited to courses and documentation, as well as studying reports from conferences and general development patterns.
             </p>
             <p className={`${styles.about__text} ${styles.about__text_abuot}`}>
             When working on projects, I would like to create products that empower people. I want to become part of a Scrum oriented team and see results in a specific service or service.
             </p>
           </div>
         </div>
-      </section>
+      </article>
     </div>
   );
 };
