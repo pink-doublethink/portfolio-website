@@ -8,8 +8,8 @@ import ErrorPage from "../pages/en/ErrorPage";
 import ErrorPageRu from "../pages/ru/ErrorPageRu";
 import ScrollToTopOnPageChange from "../utils/ScrollToTopOnPageChange";
 
+
 const HomePage = lazy(() => import('../pages/en/HomePage'));
-const PrivacyPage = lazy(() => import('../pages/en/PrivacyPage'));
 const BlogPage = lazy(() => import('../pages/en/BlogPage'));
 const AboutPage = lazy(() => import('../pages/en/AboutPage'));
 
@@ -19,7 +19,6 @@ const UsingLayersInCSSPage = lazy(() => import('../pages/en/articles_pages/Using
 const OpinionNestingInCSSPage = lazy(() => import('../pages/en/articles_pages/OpinionNestingInCSSPage'));
 
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
-const PrivacyPageRu = lazy(() => import('../pages/ru/PrivacyPageRu'));
 const BlogPageRu = lazy(() => import('../pages/ru/BlogPageRu'));
 const AboutPageRu = lazy(() => import('../pages/ru/AboutPageRu'));
 
@@ -52,16 +51,8 @@ const App = () => {
   useEffect(effectFn, []);
 
   const Head = language === "en" ? (<Header/>) : (<HeaderRu/>);
+  
   const Home = language === "en" ? (<HomePage/>) : (<HomePageRu/>);
-  // const Privacy = language === "en" ? (<PrivacyPage/>) : (<PrivacyPageRu/>)
-  const Blog = language === "en" ? (<BlogPage/>) : (<BlogPageRu/>);
-  const About = language === "en" ? (<AboutPage/>) : (<AboutPageRu/>);
-  const Error = language === "en" ? (<ErrorPage/>) : (<ErrorPageRu/>);
-
-  const OpinionNestingInCSS = language === "en" ? (<OpinionNestingInCSSPage/>) : (<OpinionNestingInCSSPageRu/>);
-  const UsingLayersInCSS = language === "en" ? (<UsingLayersInCSSPage/>) : (<UsingLayersInCSSPageRu/>);
-  const BecameFrontDev = language === "en" ? (<BecameFrontDevPage/>) : (<BecameFrontDevPageRu/>);
-  const LucaDaCostaBook = language === "en" ? (<LucaDaCostaBookPage/>) : (<LucaDaCostaBookPageRu/>);
 
   return (
     <div className={theme}>
@@ -72,14 +63,24 @@ const App = () => {
                 <Suspense fallback={<Spinner/>}>
                     <Routes>
                         <Route path={`/`} element={Home}/>
-                        <Route path={`/${language}`} element={Home}/>
-                        <Route path={`/${language}/about`} element={About}/>
-                        <Route path={`/${language}/blog`} element={Blog}/>
-                        <Route path={`/${language}/blog/becameFrontDev`} element={BecameFrontDev}/>
-                        <Route path={`/${language}/blog/lucaDaCostaBook`} element={LucaDaCostaBook}/>
-                        <Route path={`/${language}/blog/usingLayersInCSS`} element={UsingLayersInCSS}/>
-                        <Route path={`/${language}/blog/opinionNestingInCSS`} element={OpinionNestingInCSS}/>
-                        <Route path="*" element={Error}/>
+                        
+                        <Route path='/en' element={<HomePage />} />
+                        <Route path='/en/about' element={<AboutPage />} />
+                        <Route path='/en/blog' element={<BlogPage />} />
+                        <Route path='/en/blog/becameFrontDev' element={<BecameFrontDevPage />} />
+                        <Route path='/en/blog/lucaDaCostaBook' element={<LucaDaCostaBookPage />} />
+                        <Route path='/en/blog/usingLayersInCSS' element={<UsingLayersInCSSPage />} />
+                        <Route path='/en/blog/opinionNestingInCSS' element={<OpinionNestingInCSSPage />} />
+                        
+                        <Route path='/ru' element={<HomePageRu />} />
+                        <Route path='/ru/about' element={<AboutPageRu/>} />
+                        <Route path='/ru/blog' element={<BlogPageRu />} />
+                        <Route path='/ru/blog/becameFrontDev' element={<BecameFrontDevPageRu />} />
+                        <Route path='/ru/blog/lucaDaCostaBook' element={<LucaDaCostaBookPageRu />} />
+                        <Route path='/ru/blog/usingLayersInCSS' element={<UsingLayersInCSSPageRu />} />
+                        <Route path='/ru/blog/opinionNestingInCSS' element={<OpinionNestingInCSSPageRu />} />
+
+                        <Route path='*' element={<ErrorPage />} />
                     </Routes>
                 </Suspense>
             </main>

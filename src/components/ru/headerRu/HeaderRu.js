@@ -11,9 +11,9 @@ const HeaderRu = () => {
         <div lassName={styles.header__filler}></div>
         <ul className={styles.header__items}>
           <li className={styles.header__links}><Link to="/ru/" className={styles.header__link} alt="Ссылка на главную">Главная</Link></li>
-          <div className={styles.header__links}> | </div>
+          <div className={styles.header__dash}> | </div>
           <li className={styles.header__links}><Link to="/ru/blog/" className={styles.header__link} alt="Ссылка на страницу блога">Блог</Link></li>
-          <div className={styles.header__links}> | </div>
+          <div className={styles.header__dash}> | </div>
           <li className={styles.header__links}><Link to="/ru/about/" className={styles.header__link} alt="Ссылка на страницу обо мне">Обо мне</Link></li>
         </ul>
         <div className={styles.header__switchTheme}>

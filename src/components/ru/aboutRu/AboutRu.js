@@ -9,7 +9,7 @@ const AboutRu = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>
-      <section id="about" className={`${styles.about} ${styles.background}`}>
+      <article id="about" className={`${styles.about} ${styles.background}`}>
         <div className={`${styles.container} ${styles.about__container}`}>
           <div className={styles.about__me_image}>
             <picture width="450" height="700">
@@ -28,7 +28,7 @@ const AboutRu = () => {
             </p>
           </div>
         </div>
-      </section>
+      </article>
     </div>
   );
 };
