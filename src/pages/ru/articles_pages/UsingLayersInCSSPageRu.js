@@ -2,6 +2,7 @@ import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { UsingLayersInCSSRu, FooterRu } from "../../../components/ru"
+import favicon from "../../../assets/icons/2.png"
 
 const UsingLayersInCSSPageRu = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,6 +18,7 @@ const UsingLayersInCSSPageRu = () => {
           name="author" 
           content="Алексей Овсянников" 
         />
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       </Helmet>
       <UsingLayersInCSSRu/>
       <FooterRu/>

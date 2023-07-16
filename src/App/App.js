@@ -5,8 +5,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Header, Spinner} from "../components/en";
 import {HeaderRu} from "../components/ru";
 import ErrorPage from "../pages/en/ErrorPage";
-import ErrorPageRu from "../pages/ru/ErrorPageRu";
 import ScrollToTopOnPageChange from "../utils/ScrollToTopOnPageChange";
+import Analytics from "../utils/Analytics";
 
 
 const HomePage = lazy(() => import('../pages/en/HomePage'));
@@ -31,6 +31,7 @@ const OpinionNestingInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/
 const App = () => {
   const { theme } = useContext(ThemeContext);
   const [language, setLanguage] = useState("en");
+  
 
   const createEffectFn = (setLanguage) => {
     return () => {
@@ -58,6 +59,7 @@ const App = () => {
     <div className={theme}>
         <Router>
           <ScrollToTopOnPageChange />
+          <Analytics />
           {Head}
             <main>
                 <Suspense fallback={<Spinner/>}>
