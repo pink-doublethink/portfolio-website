@@ -1,6 +1,13 @@
 @use '../../../../scss/abstracts/variables' as *;
 @import '../../../../scss/abstracts/mixin';
 
+.codeContainers{
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
 .light {
     .article {
         background-color: hsl(44, 41%, 89%);
