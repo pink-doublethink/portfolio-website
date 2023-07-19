@@ -103,7 +103,7 @@
     }
 
     &__img {
-        width: 100%;
+        width: calc(100px + 10vw);
         height: 65%;
         position: relative;
     }
@@ -111,6 +111,7 @@
     &__image {
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     &__subject {

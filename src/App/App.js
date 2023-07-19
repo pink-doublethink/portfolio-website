@@ -15,7 +15,6 @@ const AboutPage = lazy(() => import('../pages/en/AboutPage'));
 
 const BecameFrontDevPage = lazy(() => import('../pages/en/articles_pages/BecameFrontDevPage'));
 const LucaDaCostaBookPage = lazy(() => import('../pages/en/articles_pages/LucaDaCostaBookPage'));
-const UsingLayersInCSSPage = lazy(() => import('../pages/en/articles_pages/UsingLayersInCSSPage'));
 const OpinionNestingInCSSPage = lazy(() => import('../pages/en/articles_pages/OpinionNestingInCSSPage'));
 
 const HomePageRu = lazy(() => import('../pages/ru/HomePageRu'));
@@ -25,7 +24,6 @@ const AboutPageRu = lazy(() => import('../pages/ru/AboutPageRu'));
 
 const BecameFrontDevPageRu = lazy(() => import('../pages/ru/articles_pages/BecameFrontDevPageRu'));
 const LucaDaCostaBookPageRu = lazy(() => import('../pages/ru/articles_pages/LucaDaCostaBookPageRu'));
-const UsingLayersInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/UsingLayersInCSSPageRu'));
 const OpinionNestingInCSSPageRu = lazy(() => import('../pages/ru/articles_pages/OpinionNestingInCSSPageRu'));
 
 const App = () => {
@@ -71,7 +69,6 @@ const App = () => {
                         <Route path='/en/blog' element={<BlogPage />} />
                         <Route path='/en/blog/becameFrontDev' element={<BecameFrontDevPage />} />
                         <Route path='/en/blog/lucaDaCostaBook' element={<LucaDaCostaBookPage />} />
-                        <Route path='/en/blog/usingLayersInCSS' element={<UsingLayersInCSSPage />} />
                         <Route path='/en/blog/opinionNestingInCSS' element={<OpinionNestingInCSSPage />} />
                         
                         <Route path='/ru' element={<HomePageRu />} />
@@ -79,7 +76,6 @@ const App = () => {
                         <Route path='/ru/blog' element={<BlogPageRu />} />
                         <Route path='/ru/blog/becameFrontDev' element={<BecameFrontDevPageRu />} />
                         <Route path='/ru/blog/lucaDaCostaBook' element={<LucaDaCostaBookPageRu />} />
-                        <Route path='/ru/blog/usingLayersInCSS' element={<UsingLayersInCSSPageRu />} />
                         <Route path='/ru/blog/opinionNestingInCSS' element={<OpinionNestingInCSSPageRu />} />
 
                         <Route path='*' element={<ErrorPage />} />

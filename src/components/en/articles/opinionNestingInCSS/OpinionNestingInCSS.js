@@ -8,22 +8,22 @@ const OpinionNestingInCSS = () => {
   const { theme } = useContext(ThemeContext);
   const css = "css";
   const ex1 = `.card {
-    border: 1px solid gray;
-    padding: 16px;
-  }
-      
-  .card h2 {
-    font-size: 24px;
-  }
-      
-  .card p {
-    font-size: 16px;
-  }
-      
-  .card .button {
-    background-color: blue;
-    color: white;
-  }`;
+  border: 1px solid gray;
+  padding: 16px;
+}
+    
+.card h2 {
+  font-size: 24px;
+}
+    
+.card p {
+  font-size: 16px;
+}
+    
+.card .button {
+  background-color: blue;
+  color: white;
+}`;
 
 
 const ex2 = `.card {

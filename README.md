@@ -19,7 +19,9 @@ Clone the repository on your computer. Then run the following commands from the 
 | :--------------------- | :------------------------------------------------- |
 | `npm install`          | Installs dependencies                              |
 | `npm start`          | Starts local dev server at `localhost:3000`        |
-| `npm build`        | Build your production site to `./build/`   |
+| `npm build`        | Build your production site to `./build`            |
+| `npm lint`         | Builds and installs a custom eslint plugin and runs eslint on the source files using a custom configuration |
+| `npm format`       | Formats the source files using prettier             |
 
 ----
 ### Contributing
