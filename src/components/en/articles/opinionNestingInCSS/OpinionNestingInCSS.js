@@ -2,114 +2,103 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../../context/ThemeContext";
 import styles from "./opinionNestingInCSS.module.scss";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { lucario } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const OpinionNestingInCSS = () => {
   const { theme } = useContext(ThemeContext);
-  const ex1 = `
-    .card {
-      border: 1px solid gray;
-      padding: 16px;
-    }
+  const css = "css";
+  const ex1 = `.card {
+  border: 1px solid gray;
+  padding: 16px;
+}
     
-    .card h2 {
-      font-size: 24px;
-    }
+.card h2 {
+  font-size: 24px;
+}
     
-    .card p {
-      font-size: 16px;
-    }
+.card p {
+  font-size: 16px;
+}
     
-    .card .button {
-      background-color: blue;
-      color: white;
-    }
-  `;
+.card .button {
+  background-color: blue;
+  color: white;
+}`;
 
 
-  const ex2 = `
-    .card {
-      border: 1px solid gray;
-      padding: 16px;
+const ex2 = `.card {
+  border: 1px solid gray;
+  padding: 16px;
     
-      h2 {
-        font-size: 24px;
-      }
+  h2 {
+    font-size: 24px;
+  }
     
-      p {
-        font-size: 16px;
-      }
+  p {
+    font-size: 16px;
+  }
     
-      .button {
-        background-color: blue;
-        color: white;
-      }
-    }
-  `;
+  .button {
+    background-color: blue;
+    color: white;
+  }
+}`;
 
-  const ex3 = `
-    .foo {
-      color: red;
+const ex3 = `.foo {
+  color: red;
     
-      & .bar {
-        color: green;
+  & .bar {
+    color: green;
     
-        & .baz {
-          color: blue;
-        }
-      }
-    }
-  `;
-
-  const ex4 = `
-    .foo {
-      color: red;
-    }
-    
-    .foo .bar {
-      color: green;
-    }
-    
-    .foo .bar .baz {
+    & .baz {
       color: blue;
     }
-  `;
+  }
+}`;
 
-  const ex5 = `
-    .button {
-      background-color: gray;
+const ex4 = `.foo {
+  color: red;
+}
     
-      &:hover {
-        background-color: darkgray;
-      }
+.foo .bar {
+  color: green;
+}
     
-      &--primary {
-        background-color: blue;
-    
-        &:hover {
-          background-color: darkblue;
-        }
-      }
-    }
-  `;
+.foo .bar .baz {
+  color: blue;
+}`;
 
-  const ex6 = `
-    .button {
-      background-color: gray;
-    }
+const ex5 = `.button {
+  background-color: gray;
     
-    .button:hover {
-      background-color: darkgray;
-    }
+  &:hover {
+    background-color: darkgray;
+  }
     
-    .button--primary {
-      background-color: blue;
-    }
+  &--primary {
+    background-color: blue;
     
-    .button--primary:hover {
+    &:hover {
       background-color: darkblue;
     }
-  `;
+  }
+}`;
+
+const ex6 = `.button {
+  background-color: gray;
+}
+    
+.button:hover {
+  background-color: darkgray;
+}
+    
+.button--primary {
+  background-color: blue;
+}
+    
+.button--primary:hover {
+  background-color: darkblue;
+}`;
 
   return (
     <div className={styles[theme]}>
@@ -123,8 +112,8 @@ const OpinionNestingInCSS = () => {
                     CSS is a powerful language for styling web pages, but it can also be verbose and repetitive. One of the common challenges that developers face is writing long and complex selectors that target specific elements or components. For example, consider the following code:
                   </p>
                   <div className={styles.codeContainers}>
-                    <SyntaxHighlighter language="css" style={dark}>
-                        {ex1}
+                    <SyntaxHighlighter language="css" style={lucario}>
+                      {ex1}
                     </SyntaxHighlighter>
                   </div>
                   <p className={styles.article__paragraph}>
@@ -134,7 +123,7 @@ const OpinionNestingInCSS = () => {
                     To address this problem, a new feature has been proposed for CSS: nesting. This feature allows developers to write selectors inside other selectors, using the & symbol to refer to the parent selector. For example, the previous code can be rewritten as: 
                   </p>
                   <div className={styles.codeContainers}>
-                    <SyntaxHighlighter language="css" style={dark}>
+                    <SyntaxHighlighter language="css" style={lucario}>
                         {ex2}
                     </SyntaxHighlighter>
                   </div>
@@ -149,29 +138,35 @@ const OpinionNestingInCSS = () => {
                   <p className={styles.article__paragraph}>
                     CSS nesting works by transforming nested selectors into flat selectors at runtime. For example, the following code:
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex3}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={lucario}>
+                        {ex3}
+                    </SyntaxHighlighter>
+                  </div>
                   <p className={styles.article__paragraph}>
                     will be transformed into:
                   </p>
                   <div className={styles.codeContainers}>
-                    <SyntaxHighlighter language="css" style={dark}>
+                    <SyntaxHighlighter language="css" style={lucario}>
                         {ex4}
                     </SyntaxHighlighter>
                   </div>
                   <p className={styles.article__paragraph}>
                     The & symbol can also be combined with other selectors or pseudo-classes to create more complex selectors. For example, the following code:
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex5}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={lucario}>
+                        {ex5}
+                    </SyntaxHighlighter>
+                  </div>
                   <p className={styles.article__paragraph}>
                     will be transformed into:
                   </p>
-                  <SyntaxHighlighter language="css" style={dark}>
-                      {ex6}
-                  </SyntaxHighlighter>
+                  <div className={styles.codeContainers}>
+                    <SyntaxHighlighter language="css" style={lucario}>
+                        {ex6}
+                    </SyntaxHighlighter>
+                  </div>
               </div>
               <div className={styles.article__box}>
                   <h3 className={styles.article__subtitle}>

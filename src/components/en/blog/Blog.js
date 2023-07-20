@@ -2,7 +2,10 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { Link } from 'react-router-dom';
 import styles from "./blog.module.scss";
-import M from "../../../assets/portfolio2.jpg"
+import developerWay from "../../../assets/img/developerWay.JPG"
+import nesting from "../../../assets/img/nesting.jpeg"
+import bookReview from "../../../assets/img/bookReview.png"
+
 
 
 const Blog = () => {
@@ -16,7 +19,7 @@ const Blog = () => {
                 <div className={styles.article__container}>
                     <Link to="/en/blog/becameFrontDev" alt="link to an article about how I became a fronted developer">
                         <div className={styles.article__img}>
-                            <img src={M} alt="" className={styles.article__image} />
+                            <img src={developerWay} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
                                 Сareer
                             </div>
@@ -48,7 +51,7 @@ const Blog = () => {
                 <div className={styles.article__container}>
                     <Link to="/en/blog/lucaDaCostaBook" alt="link to the review of the book about testing">
                         <div className={styles.article__img}>
-                            <img src={M} alt="" className={styles.article__image} />
+                            <img width={600} height={600} src={bookReview} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
                                 Testing
                             </div>
@@ -78,41 +81,9 @@ const Blog = () => {
             </article>
             <article className={styles.article}>
                 <div className={styles.article__container}>
-                    <Link to="/en/blog/usingLayersInCSS" alt="link to an article about the @layers CSS directive">
-                        <div className={styles.article__img}>
-                            <img src={M} alt="" className={styles.article__image} />
-                            <div className={styles.article__subject}>
-                                CSS
-                            </div>
-                        </div>
-                    </Link>
-                    <div className={styles.article__boxes}>
-                        <div className={styles.article__decr}>
-                            <Link to="/en/blog/usingLayersInCSS" alt="link to an article about the @layers CSS directive">
-                                <h2 className={styles.article__title}>
-                                    @layers: A New Way to Organize CSS
-                                </h2>
-                            </Link>
-                            <p className={styles.article__text}>
-                                To address this problem, a new feature has been proposed for CSS: @layers. This feature allows developers to group CSS rules into logical units called layers, and control how they interact with each other. In this article, I will explain what @layers are, how they work, and what are their advantages and disadvantages.
-                            </p>
-                        </div>
-                        <div className={styles.article__date}>
-                            <div className={styles.article__update}>
-                                Updated: 04.02.2023
-                            </div>
-                            <div className={styles.article__publish}>
-                                Published:  24.01.2023
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article className={styles.article}>
-                <div className={styles.article__container}>
                     <Link to="/en/blog/opinionNestingInCSS" alt="link to an article about nesting in native CSS">
                         <div className={styles.article__img}>
-                            <img src={M} alt="" className={styles.article__image} />
+                            <img src={nesting} alt="" className={styles.article__image} />
                             <div className={styles.article__subject}>
                                 CSS
                             </div>

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { LucaDaCostaBookRu, FooterRu } from "../../../components/ru"
+import favicon from "../../../assets/icons/2.png"
 
 const LucaDaCostaBookPageRu = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,6 +18,7 @@ const LucaDaCostaBookPageRu = () => {
           name="author" 
           content="Алексей Овсянников" 
         />
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       </Helmet>
       <LucaDaCostaBookRu/>
       <FooterRu/>

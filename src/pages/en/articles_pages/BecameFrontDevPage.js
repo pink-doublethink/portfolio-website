@@ -2,6 +2,7 @@ import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { BecameFrontDev, Footer } from "../../../components/en"
+import favicon from "../../../assets/icons/2.png"
 
 const BecameFrontDevPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,6 +18,7 @@ const BecameFrontDevPage = () => {
           name="author" 
           content="Alexei Ovsyannikov" 
         />
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       </Helmet>
       <BecameFrontDev/>
       <Footer/>

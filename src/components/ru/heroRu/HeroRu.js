@@ -4,6 +4,7 @@ import styles from "./HeroRu.module.scss";
 import MEpng from "../../../assets/img/ME.png";
 import MEavif from "../../../assets/img/ME-Av.avif";
 import MEwebp from "../../../assets/img/ME-Wp.webp";
+import TG from "../../../assets/telegram.svg";
 import CV from "../../../assets/Овсянников_Алексей_Фронтенд_разработчик.pdf";
 
 const HeroRu = () => {
@@ -24,14 +25,21 @@ const HeroRu = () => {
             </picture>
           </div>
           <div className={styles.cta}>
-            <a href={CV} download className={styles.btn}>
-              Download CV
+            <a 
+              href={CV} 
+              download 
+              className={styles.btn}
+            >
+              Скачать CV
             </a>
             <a
-              href="#contact"
-              className={`${styles.btn} ${styles.btn_primary}`}
+              href="https://t.me/pink_doublethink" 
+              target="_blank" 
+              rel="noreferrer"
+              className={`${styles.hero__btn} ${styles.btn} ${styles.btn_primary}`}
+              alt="Link to Telegram profile"
             >
-              Let's Talk
+              <img src={TG} alt="Telegram" className={styles.hero__tg}/>
             </a>
           </div>
         </div>

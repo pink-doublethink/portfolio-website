@@ -2,8 +2,8 @@
 @import '../../../../scss/abstracts/mixin';
 
 .codeContainers{
-    width: 500px;
-    height: 480px;
+    width: 400px;
+    height: fit-content;
     margin: 0 auto;
     object-fit: cover;
 }

@@ -3,7 +3,7 @@
 
 @supports (font-variation-settings: normal) {
   @font-face {
-    font-family: 'Roboto Flex';
+    font-family: 'Roboto Flex', 'san-serif';
     src: url('../../../assets/fonts/variable/RobotoFlex.ttf') format('ttf');
     font-weight: 100 1000;
     font-stretch: 25% 151%;
@@ -33,7 +33,9 @@
 
 .btn {
   width: max-content;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -139,6 +141,18 @@ header {
     text-align: center;
     height: 100%;
   }
+
+  &__tg {
+    width: calc(.25vw + 25px);
+    height: calc(.25vw + 25px);
+    object-fit: cover;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;justify-content: center;
+    width: calc(1.55vw + 50px);
+  } 
 }
 
 .me {

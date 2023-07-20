@@ -19,23 +19,23 @@ const data = [
   {
     id: 2,
     image: tabletop,
-    title: "Tabletop forum",
+    title: "Сборник фантастических рассказов",
     github: "https://github.com/pink-doublethink/malifaux.ru",
     demo: "https://malifaux.ru"
   },
   {
     id: 3,
     image: empatphy,
-    title: "Empatphy Mesum",
+    title: "Блог об Эмпатии",
     github: "https://github.com/pink-doublethink/empathy.doublethink.pink",
     demo: "http://empathy.doublethink.pink"
   },
   {
     id: 4,
     image: ecomerce,
-    title: "Pulsometr Landing Page",
-    github: "https://github.com/pink-doublethink/air-commercial-website",
-    demo: "http://#"
+    title: "Личный комбинет интернет магазина",
+    github: "https://github.com/pink-doublethink/app.malifaux.ru",
+    demo: "http://app.malifaux.ru/"
   },
   {
     id: 5,
@@ -47,9 +47,9 @@ const data = [
   {
     id: 6,
     image: country,
-    title: "Country Info",
-    github: "https://github.com/pink-doublethink/real-estate-website",
-    demo: "http://#"
+    title: "Статистика о странах мира",
+    github: "https://github.com/pink-doublethink/regions-website",
+    demo: "https://cheerful-hummingbird-13fc77.netlify.app/"
   }
 ];
 

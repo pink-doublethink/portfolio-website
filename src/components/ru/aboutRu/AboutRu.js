@@ -9,7 +9,7 @@ const AboutRu = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={styles[theme]}>
-      <section id="about" className={`${styles.about} ${styles.background}`}>
+      <article id="about" className={`${styles.about} ${styles.background}`}>
         <div className={`${styles.container} ${styles.about__container}`}>
           <div className={styles.about__me_image}>
             <picture width="450" height="700">
@@ -21,14 +21,17 @@ const AboutRu = () => {
           <div className={styles.about__content}>
             <h2 className={styles.title}>Биография</h2>
             <p className={`${styles.about__text} ${styles.about__text_info}`}>
-            Летом 21 года сменил занятие риэлтерским делом на разработку пользовательских интерфейсов. В своем коде придерживаюсь философии SOLID. Изучая разработку не ограничивался курсами и документацией, так же изучая доклады с конференций и общие паттерны разработки.
+              Cпециалист по созданию удобных и доступных интерфейсов. Работал внештатным веб-разработчиком, аналитиком, риэлтором, разработчиком настольных игр. Последние годы занимался SPA-приложениями на React и библиотеками вокруг этого фреймворка.
+            </p>
+            <p className={`${styles.about__text} ${styles.about__text_info}`}>
+              Прошел путь от апологета функционального программирования до осознания того, что необходимо находить компромисс между бизнес-процессами и чистотой кода. Изучив экосистему React и ее основные библиотеки, не перестал изучать смеежные веб технологии: Nest.js, SQL & noSQL, webAssembly.
             </p>
             <p className={`${styles.about__text} ${styles.about__text_abuot}`}>
-            Работая над проектами мне бы хотелось создавать продукты, расширяющие возможности людей. Хочу стать частью Scrum орентированной команды и видеть результаты в конкретном сервисе или услуге.
+              Работая над проектами мне бы хотелось создавать продукты, расширяющие возможности людей. Хочу стать частью Scrum орентированной команды и видеть результаты в конкретном сервисе или услуге.
             </p>
           </div>
         </div>
-      </section>
+      </article>
     </div>
   );
 };

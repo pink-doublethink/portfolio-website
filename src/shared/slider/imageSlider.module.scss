@@ -1,0 +1,49 @@
+.imgSlider {
+    position: relative;
+    height: 100%;
+}
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 32px;
+    z-index: 1;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    right: 32px;
+    font-size: 2rem;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+.slidesContainer{
+  overflow: hidden;
+  height: 100%;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+  }
+.dot {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  
+}
+

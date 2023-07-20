@@ -2,6 +2,7 @@ import { useContext } from "react";
 import {Helmet} from "react-helmet";
 import { ThemeContext } from "../../../context/ThemeContext";
 import { OpinionNestingInCSS, Footer } from "../../../components/en"
+import favicon from "../../../assets/icons/2.png"
 
 const OpinionNestingInCSSPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,6 +18,7 @@ const OpinionNestingInCSSPage = () => {
           name="author" 
           content="Alexei Ovsyannikov" 
         />
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       </Helmet>
       <OpinionNestingInCSS/>
       <Footer/>

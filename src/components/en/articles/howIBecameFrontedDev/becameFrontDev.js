@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../../context/ThemeContext";
 import styles from "./becameFrontDev.module.scss";
-import ImageSlider from "../../../../shared/ImageSlider";
+import ImageSlider from "../../../../shared/slider/ImageSlider";
 
 const BecameFrontDev = () => {
     const { theme } = useContext(ThemeContext);

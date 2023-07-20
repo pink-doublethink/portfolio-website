@@ -11,6 +11,5 @@ import Footer from "./footer/Footer";
 import BecameFrontDev from "./articles/howIBecameFrontedDev/becameFrontDev";
 import LucaDaCostaBook from "./articles/lucaDaCostaBook/lucaDaCostaBook";
 import OpinionNestingInCSS from "./articles/opinionNestingInCSS/OpinionNestingInCSS";
-import UsingLayersInCSS from "./articles/usingLayersInCSS/UsingLayersInCSS";
 
-export {Header, Hero, About, Blog, Experience, Portfolio, Spinner, ErrorMessage, Footer, BecameFrontDev, LucaDaCostaBook, OpinionNestingInCSS, UsingLayersInCSS}; 
+export {Header, Hero, About, Blog, Experience, Portfolio, Spinner, ErrorMessage, Footer, BecameFrontDev, LucaDaCostaBook, OpinionNestingInCSS}; 
