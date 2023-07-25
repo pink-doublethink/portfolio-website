@@ -5,7 +5,7 @@ import MEpng from "../../../assets/img/ME.png";
 import MEavif from "../../../assets/img/ME-Av.avif";
 import MEwebp from "../../../assets/img/ME-Wp.webp";
 import TG from "../../../assets/telegram.svg";
-import CV from "../../../assets/Овсянников_Алексей_Фронтенд_разработчик.pdf";
+import CV from "../../../assets/Овсянников-Алексей_Фронтенд-разработчик.pdf";
 
 const HeroRu = () => {
   const { theme } = useContext(ThemeContext);
